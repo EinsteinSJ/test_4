@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+        <record id="view_l10n_latam_identification_type_form" model="ir.ui.view">
+            <field name="name">l10n_latam.identification.type.form</field>
+            <field name="model">l10n_latam.identification.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form create="0" edit="0" delete="0" string="Identification Types">
+                    <group name="l10n_latam_identification_type">
+                        <group name="l10n_latam_identification_type_left">
+                            <field name="name" readonly="1"/>
+                            <field name="description" readonly="1"/>
+                            <field name="country_id" readonly="1"/>
+                            <field name="l10n_pe_vat_code" attrs="{'invisible': [('l10n_pe_vat_code','=',False), ('country_id','=',%(base.pe)d)]}" readonly="1"/>
+                            <field name="is_vat" readonly="1"/>
+                            <field name="active" readonly="1"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_l10n_latam_identification_type_tree" model="ir.ui.view">
+            <field name="name">l10n_latam.identification.type.tree</field>
+            <field name="model">l10n_latam.identification.type</field>
+            <field name="inherit_id" ref="l10n_latam_base.view_l10n_latam_identification_type_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="delete">0</attribute>
+                </xpath>
+                <xpath expr="//field[@name='country_id']" position="after">
+                    <field name="l10n_pe_vat_code"/>
+                    <field name="is_vat"/>
+                </xpath>
+            </field>
+        </record>
+	</data>
+</odoo>

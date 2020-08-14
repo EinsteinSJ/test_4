@@ -1,0 +1,1899 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mouse_einvoice_base
+# 	* account
+# 	* account_debit_note
+# 	* l10n_latam_invoice_document
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-18 22:11+0000\n"
+"PO-Revision-Date: 2020-07-18 22:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account
+#: model:mail.template,subject:account.email_template_edi_invoice
+msgid "${object.company_id.name} Invoice (Ref ${object.name or 'n/a'})"
+msgstr "${object.company_id.name} ${object.journal_id.l10n_latam_document_type_id.name or 'Comprobante'} (Ref ${object.number or 'n/a'})"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.portal_my_home_menu_invoice
+msgid "<em>Draft Invoice</em>"
+msgstr "<em>Comprobante Borrador</em>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid ""
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'out_invoice'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Draft Invoice</span>\n"
+"                                <span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'out_refund'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Draft Credit Note</span>\n"
+"                                <span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'in_invoice'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Draft Bill</span>\n"
+"                                <span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'in_refund'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Draft Refund</span>\n"
+"                                <span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'out_receipt'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Draft Sales Receipt</span>\n"
+"                                <span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'in_receipt'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Draft Purchase Receipt</span>"
+msgstr ""
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'out_invoice'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Borrador de comprobante</span>\n"
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'out_refund'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Borrador de nota de crédito</span>\n"
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'in_invoice'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Borrador de recibo</span>\n"
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'in_refund'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Borrador de reembolso</span>\n"
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'out_receipt'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Borrador de recibo de venta</span>\n"
+"<span attrs=\"{'invisible': ['|', '|', ('type', '!=', 'in_receipt'), ('state', '!=', 'draft'), ('name', '!=', '/')]}\">Borrador de recibo de compra</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
+msgid ""
+"<span attrs=\"{'invisible':[('reconciled_invoices_count','&gt;',1)]}\">Invoice</span>\n"
+"                                <span attrs=\"{'invisible':[('reconciled_invoices_count','&lt;=',1)]}\">Invoices</span>"
+msgstr ""
+"<span attrs=\"{'invisible':[('reconciled_invoices_count','&gt;',1)]}\">Comprobante</span>\n"
+"<span attrs=\"{'invisible':[('reconciled_invoices_count','&lt;=',1)]}\">Comprobantes</span>"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_move_form_debit_credit
+msgid "<span class=\"o_stat_text\">Credit Notes</span>"
+msgstr "<span class=\"o_stat_text\">Notas de Crédito</span>"
+
+#. module: account_debit_note
+#: model_terms:ir.ui.view,arch_db:account_debit_note.view_move_form_debit
+msgid "<span class=\"o_stat_text\">Debit Notes</span>"
+msgstr "<span class=\"o_stat_text\">Notas de débito</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
+msgid "<span>Invoice Date</span>"
+msgstr "<span>Fecha de Comprobante</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
+msgid "<span>Invoice Number</span>"
+msgstr "<span>Número de Comprobante</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+msgid "<span>New Invoice</span>"
+msgstr "<span>Nuevo Comprobante</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+msgid "<span>Upload Invoices</span>"
+msgstr "<span>Cargar Comprobantes</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Fecha del Comprobante:</strong>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "Add Credit Note"
+msgstr "Añadir Nota de Crédito"
+
+#. module: account_debit_note
+#: model_terms:ir.ui.view,arch_db:account_debit_note.view_move_form_debit
+msgid "Add Debit Note"
+msgstr "Añadir Nota de Débito"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_debit_note
+msgid "Add Debit Note wizard"
+msgstr "Asistente de creación de Nota de Débito"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Add a payment QR code to your invoices"
+msgstr "Agregue un código QR de pago a sus comprobantes"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid ""
+"Add an EPC QR code to your invoices so that your customers can pay instantly"
+" with their mobile banking application. EPC QR codes are used by many "
+"European banks to process SEPA payments."
+msgstr ""
+"Agregue un código QR de EPC a sus comprobantes para que sus clientes puedan "
+"pagar al instante con su aplicación de banca móvil. Los códigos QR EPC son "
+"utilizados por muchos bancos europeos para procesar los pagos SEPA."
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid ""
+"All invoices and payments have been matched, your accounts' balances are "
+"clean."
+msgstr ""
+"Todos los comprobantes y pagos han sido conciliados, sus saldos están "
+"cuadrados."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"All invoices sent to SUNAT must be posted.\n"
+"Please select only posted invoices."
+msgstr ""
+"Todos los comprobantes enviados a la SUNAT deben estar validados.\n"
+"Por favor seleccione solo comprobantes validados."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__sunat_answer
+msgid "Answer received from SUNAT"
+msgstr "Respuesta recibida de la SUNAT"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_move__invoice_partner_bank_id
+msgid ""
+"Bank Account Number to which the invoice will be paid. A Company bank "
+"account if this is a Customer Invoice or Vendor Credit Note, otherwise a "
+"Partner bank account number."
+msgstr ""
+"Número de cuenta bancaria a la que se pagará el comprobante. Una cuenta "
+"bancaria de la Compañía si éste es un comprobante de cliente o una nota "
+"de crédito de proveedor, de lo contrario se usará el número de cuenta "
+"bancaria de la empresa."
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_journal__invoice_reference_type__invoice
+#: model:ir.model.fields.selection,name:account.selection__account_tax__tax_exigibility__on_invoice
+#: model:ir.model.fields.selection,name:account.selection__account_tax_template__tax_exigibility__on_invoice
+msgid "Based on Invoice"
+msgstr "Basado en Comprobante"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_tax__tax_exigibility
+#: model:ir.model.fields,help:account.field_account_tax_template__tax_exigibility
+msgid ""
+"Based on Invoice: the tax is due as soon as the invoice is validated.\n"
+"Based on Payment: the tax is due as soon as the payment of the invoice is received."
+msgstr ""
+"Basado en el comprobante: el impuesto vence tan pronto como el comprobante sea validado.\n"
+"Basado en el pago: el impuesto vence tan pronto como se reciba el pago del comprobante."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__beta_service
+msgid "Beta Server"
+msgstr "Servidor Beta"
+
+#. module: account
+#: model:ir.filters,name:account.filter_invoice_refund
+msgid "By Credit Note"
+msgstr "Por Nota de Crédito"
+
+#. module: account_debit_note
+#: model_terms:ir.ui.view,arch_db:account_debit_note.view_account_debit_note
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "Cancelled Invoice"
+msgstr "Comprobante Cancelado"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "Cannot create an invoice of type %s with a journal having %s as type."
+msgstr ""
+"No se puede crear un comprobante de tipo %s con un diario que tenga como "
+"tipo %s."
+
+#. module: account
+#: code:addons/account/controllers/portal.py:0
+#, python-format
+msgid ""
+"Changing VAT number is not allowed once invoices have been issued for your "
+"account. Please contact us directly for this operation."
+msgstr ""
+"No se permite cambiar el número de RUC (Identificación Fiscal) una vez que"
+" se hayan emitido los comprobantes para su cuenta. Por favor contáctenos"
+" directamente para esta operación."
+
+#. module: account
+#: code:addons/account/controllers/portal.py:0
+#, python-format
+msgid ""
+"Changing your company name is not allowed once invoices have been issued for"
+" your account. Please contact us directly for this operation."
+msgstr ""
+"Cambiar el nombre de la compañía no está permitido una vez que se han emitido"
+" comprobantes para su cuenta. Por favor contáctenos para realizar esta"
+" operación."
+
+#. module: account
+#: code:addons/account/controllers/portal.py:0
+#, python-format
+msgid ""
+"Changing your name is not allowed once invoices have been issued for your "
+"account. Please contact us directly for this operation."
+msgstr ""
+"No se permite cambiar su nombre una vez que se hayan emitido comprobantes "
+"para su cuenta. Por favor contáctenos directamente para esta operación."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_account__reconcile
+msgid ""
+"Check this box if this account allows invoices & payments matching of "
+"journal items."
+msgstr ""
+"Marque esta casilla si la cuenta permite conciliar comprobantes y pagos "
+"del diario."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__refund_sequence
+msgid ""
+"Check this box if you don't want to share the same sequence for invoices and"
+" credit notes made from this journal"
+msgstr ""
+"Marque esta casilla si no desea compartir la misma secuencia de comprobantes"
+" y notas de crédito para este diario"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_tax__price_include
+#: model:ir.model.fields,help:account.field_account_tax_template__price_include
+msgid ""
+"Check this if the price you use on the product and invoices includes this "
+"tax."
+msgstr ""
+"Marque esta opción si el precio que utiliza en el producto y en los "
+"comprobantes incluye este impuesto."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_move_reversal__refund_method
+msgid ""
+"Choose how you want to credit this invoice. You cannot \"modify\" nor "
+"\"cancel\" if the invoice is already reconciled."
+msgstr ""
+"Elija cómo quiere acreditar este comprobante. No puede modificar ni "
+"cancelar el comprobante una vez conciliado."
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/js/tours/account.js:0
+#, python-format
+msgid "Click to <b>send the invoice by email.</b>"
+msgstr "Pulsar para <b>enviar el comprobante por email.</b>"
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/js/tours/account.js:0
+#, python-format
+msgid "Click to <b>send the invoice.</b>"
+msgstr "Clic para <b>enviar el comprobante.</b>"
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/js/tours/account.js:0
+#, python-format
+msgid ""
+"Click to <b>validate your invoice.</b> A reference will be assigned to this "
+"invoice and you will not be able to modify it anymore."
+msgstr ""
+"Clic para <b>validar su comprobante.</b> Una referencia será asignada "
+"a este comprobante y usted no podrá modificarlo en ningún otro momento."
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__copy_lines
+msgid "Copy Lines"
+msgstr "Copiar Líneas"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move__l10n_latam_country_code
+msgid "Country Code (LATAM)"
+msgstr "Código País (LATAM)"
+
+#. module: account_debit_note
+#: model:ir.actions.act_window,name:account_debit_note.action_view_account_move_debit
+#: model_terms:ir.ui.view,arch_db:account_debit_note.view_account_debit_note
+msgid "Create Debit Note"
+msgstr "Crear Nota de Débito"
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_move_out_refund_type
+msgid "Create a credit note"
+msgstr "Crear una nota de crédito"
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_move_out_invoice_type
+msgid "Create a customer invoice"
+msgstr "Crea un comprobante de cliente"
+
+#. module: account
+#: code:addons/account/models/account_journal_dashboard.py:0
+#, python-format
+msgid "Create invoice/bill"
+msgstr "Crear comprobante/recibo"
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_move_out_invoice_type
+msgid ""
+"Create invoices, register payments and keep track of the discussions with "
+"your customers."
+msgstr ""
+"Crear comprobantes, registrar pagos y mantener el rastro de todas las "
+"conversaciones con sus clientes."
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_move_in_invoice_type
+msgid ""
+"Create invoices, register payments and keep track of the discussions with "
+"your vendors."
+msgstr ""
+"Cree comprobantes, registre pagos y realice un seguimiento de las"
+" conversaciones con sus proveedores."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#: code:addons/account/models/account_move.py:0
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+#, python-format
+msgid "Credit Note"
+msgstr "Nota de Crédito"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "Credit Note Created"
+msgstr "Nota de Crédito Creada"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__refund_sequence_id
+msgid "Credit Note Entry Sequence"
+msgstr "Secuencia de Numeración para Nota de Crédito"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_credit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_credit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__l10n_latam_document_type_credit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_ir_sequence__l10n_latam_document_type_credit_id
+msgid "Credit Note Type"
+msgstr "Tipo de Nota de Crédito"
+
+#. modules: account, l10n_latam_invoice_document, mouse_einvoice_base
+#: model:ir.actions.act_window,name:account.action_move_out_refund_type
+#: model:ir.ui.menu,name:account.menu_action_move_out_refund_type
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+#: model:ir.model.fields.selection,name:l10n_latam_invoice_document.selection__l10n_latam_document_type__internal_type__credit_note
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__credit_note_ids
+msgid "Credit Notes"
+msgstr "Notas de Crédito"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__refund_sequence_number_next
+msgid "Credit Notes Next Number"
+msgstr "Número Siguiente para las Notas de Crédito"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "Credit note of %s"
+msgstr "Nota de crédito de %s"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__credit_origin_id
+msgid "Credited Invoice"
+msgstr "Comprobante Rectificado"
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#: model:ir.model.fields.selection,name:account.selection__account_invoice_report__type__out_refund
+#: model:ir.model.fields.selection,name:account.selection__account_move__type__out_refund
+#, python-format
+msgid "Customer Credit Note"
+msgstr "Nota de Crédito de Cliente"
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_invoice_report__type__out_invoice
+#: model:ir.model.fields.selection,name:account.selection__account_move__type__out_invoice
+msgid "Customer Invoice"
+msgstr "Comprobante de Cliente"
+
+#. module: account
+#: code:addons/account/models/chart_template.py:0
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+#, python-format
+msgid "Customer Invoices"
+msgstr "Comprobantes de Cliente"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_payment_term_line__day_of_the_month
+msgid ""
+"Day of the month on which the invoice must come to its term. If zero or "
+"negative, this value will be ignored, and no specific day will be set. If "
+"greater than the last day of a month, this number will instead select the "
+"last day of this month."
+msgstr ""
+"Día del mes en que el comprobante debe llegar a su término. Si es cero o "
+"negativo, este valor se ignorará y no se establecerá un día específico. Si "
+"es mayor que el último día de un mes, este número seleccionará el último "
+"día de este mes."
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__date
+#: model_terms:ir.ui.view,arch_db:account_debit_note.view_account_debit_note
+msgid "Debit Note Date"
+msgstr "Fecha de Nota de Débito"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_debit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_debit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__l10n_latam_document_type_debit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_ir_sequence__l10n_latam_document_type_debit_id
+msgid "Debit Note Type"
+msgstr "Tipo de Nota de Débito"
+
+#. module: account_debit_note
+#: code:addons/account_debit_note/models/account_move.py:0
+#: code:addons/account_debit_note/wizard/account_debit_note.py:0
+#: model:ir.model.fields,field_description:account_debit_note.field_account_move__debit_note_ids
+#, python-format
+msgid "Debit Notes"
+msgstr "Notas de Débito"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "Debit note of %s"
+msgstr "Nota de débito de %s"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__refund_sequence
+msgid "Dedicated Credit Note Sequence"
+msgstr "Secuencia de Notas de Crédito Dedicada"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_payment_term__note
+msgid "Description on the Invoice"
+msgstr "Descripción en el Comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__sunat_digest_value
+msgid "DigestValue of the SUNAT answer"
+msgstr "DigestValue de la respuesta SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__signed_xml_digest_value
+msgid "DigestValue of the XML digital signature"
+msgstr "DigestValue de la firma digital XML"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__digital_certificate
+msgid "Digital Certificate"
+msgstr "Certificado Digital"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__digital_certificate_filename
+msgid "Digital Certificate Filename"
+msgstr "Nombre de Archivo del Certificado Digital"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__digital_password
+msgid "Digital Certificate Password"
+msgstr "Contraseña del Certificado Digital"
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move_reversal__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_ir_sequence__l10n_latam_document_type_id
+msgid "Document Type"
+msgstr "Tipo de Comprobante"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "Draft Credit Note"
+msgstr "Borrador de Nota de Crédito"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#: model_terms:ir.ui.view,arch_db:account.portal_my_invoices
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+#, python-format
+msgid "Draft Invoice"
+msgstr "Comprobante Borrador"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+msgid "Draft Invoices"
+msgstr "Comprobantes Borrador"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "Draft Vendor Credit Note"
+msgstr "Borrador de Nota de Crédito de Proveedor"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_tax__l10n_pe_edi_tax_code
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_tax_template__l10n_pe_edi_tax_code
+msgid "EDI peruvian code"
+msgstr "Código peruano EDI"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_journal_form
+msgid "Email your Invoices/Bills"
+msgstr "Envíe sus Comprobantes/Facturas por Correo Electrónico"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move_line__exclude_from_invoice_tab
+msgid "Exclude From Invoice Tab"
+msgstr "Excluir de la Pestaña Comprobante"
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_move_reversal__refund_method__modify
+msgid "Full refund and new draft invoice"
+msgstr "Reembolso completo y nuevo borrador de comprobante"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "GENERIC"
+msgstr "GENÉRICO"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_payment__has_invoices
+msgid "Has Invoices"
+msgstr "Tiene Comprobantes"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "How total tax amount is computed in orders and invoices"
+msgstr "Cómo se calcula el monto total de impuestos en pedidos y comprobantes"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax__l10n_pe_edi_tax_code__7152
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax_template__l10n_pe_edi_tax_code__7152
+msgid "ICBPER - Plastic Bag Consumption Tax"
+msgstr "ICBPER - Impuesto al Consumo de las Bolsas de Plástico"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax__l10n_pe_edi_tax_code__3000
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax_template__l10n_pe_edi_tax_code__3000
+msgid "IR - Income Tax"
+msgstr "IR - Impuesto a la Renta"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_bank_statement_import_journal_creation__l10n_latam_use_documents
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_journal__l10n_latam_use_documents
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_move__l10n_latam_use_documents
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_move_reversal__l10n_latam_use_documents
+msgid ""
+"If active: will be using for legal invoicing (invoices, debit/credit notes)."
+" If not set means that will be used to register accounting entries not "
+"related to invoicing legal documents. For Example: Receipts, Tax Payments, "
+"Register journal entries"
+msgstr ""
+"Si esta activo: será utilizado para facturación (comprobantes, notas de débito"
+"/crédito). Si esta desactivado significa que que será usado para registrar "
+"movimientos contables que no están relacionas con facturación como tal. Por "
+"ejemplo: Recibos, Pagos de Impuestos, Registrar asientos contables"
+
+#. module: account_debit_note
+#: model:ir.model.fields,help:account_debit_note.field_account_debit_note__journal_id
+msgid "If empty, uses the journal of the journal entry to be debited."
+msgstr "Si está vacío, utiliza el diario del asiento a ser debitado."
+
+#. module: account
+#: code:addons/account/models/account.py:0
+#, python-format
+msgid ""
+"If tags are defined for a tax report line, only two are allowed on it: a "
+"positive and a negative one."
+msgstr ""
+"Si hay etiquetas definidas para una línea de reporte de impuestos, solo se "
+"permiten dos: una positiva y una negativa"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__restrict_mode_hash_table
+#: model:ir.model.fields,help:account.field_account_move__restrict_mode_hash_table
+msgid ""
+"If ticked, the accounting entry or invoice receives a hash as soon as it is "
+"posted and cannot be modified anymore."
+msgstr ""
+"Si se marca, el asiento contable o comprobante recibe un hash tan pronto "
+"sea contabilice y puede ser modificado."
+
+#. module: account_debit_note
+#: model:ir.model.fields,help:account_debit_note.field_account_debit_note__copy_lines
+msgid ""
+"In case you need to do corrections for every line, it can be in handy to "
+"copy them.  We won't copy them for debit notes from credit notes. "
+msgstr ""
+"En caso sea necesario hacer correcciones en cada línea, puede ser útil "
+"copiarlas. No serán copiadas para notas de débito de notas de crédito."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_code
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_code
+msgid "Internal Type"
+msgstr "Tipo Interno"
+
+#. modules: mouse_einvoice_base, account
+#: code:addons/account/models/account_move.py:0
+#: model:ir.model.fields,field_description:account.field_res_partner__invoice_warn
+#: model:ir.model.fields,field_description:account.field_res_users__invoice_warn
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__einvoice_journal_id
+#, python-format
+msgid "Invoice"
+msgstr "Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_invoice_report__name
+#: model_terms:ir.ui.view,arch_db:account.portal_my_invoices
+msgid "Invoice #"
+msgstr "Comprobante #"
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#: model:mail.message.subtype,description:account.mt_invoice_created
+#: model:mail.message.subtype,name:account.mt_invoice_created
+#, python-format
+msgid "Invoice Created"
+msgstr "Comprobante Creado"
+
+#. module: account
+#: code:addons/account/controllers/portal.py:0
+#: model:ir.model.fields,field_description:account.field_account_invoice_report__invoice_date
+#: model_terms:ir.ui.view,arch_db:account.portal_my_invoices
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:account.view_invoice_tree
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+#, python-format
+msgid "Invoice Date"
+msgstr "Fecha Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_filter_type_domain
+msgid "Invoice Filter Type Domain"
+msgstr "Dominio del Tipo de Filtro para Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_has_matching_suspense_amount
+msgid "Invoice Has Matching Suspense Amount"
+msgstr "El Comprobante Tiene un Importe de Suspenso Correspondiente"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_has_outstanding
+msgid "Invoice Has Outstanding"
+msgstr "El Comprobante Tiene Pendientes de Pago"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_invoice_layout_step
+msgid "Invoice Layout"
+msgstr "Diseño de Comprobante"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "Invoice Lines"
+msgstr "Líneas de Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_payment
+msgid "Invoice Online Payment"
+msgstr "Pago en Línea del Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_outstanding_credits_debits_widget
+msgid "Invoice Outstanding Credits Debits Widget"
+msgstr "Widget Créditos Débitos Pendientes del Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_partner_display_name
+msgid "Invoice Partner Display Name"
+msgstr "Nombre a Mostrar del Socio en el Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_partner_icon
+msgid "Invoice Partner Icon"
+msgstr "Icono del Socio en el Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_payments_widget
+msgid "Invoice Payments Widget"
+msgstr "Widget Pagos de Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_sent
+msgid "Invoice Sent"
+msgstr "Comprobante Enviado"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_invoice_report__state
+msgid "Invoice Status"
+msgstr "Estado Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_tax_repartition_line__invoice_tax_id
+#: model:ir.model.fields,field_description:account.field_account_tax_repartition_line_template__invoice_tax_id
+msgid "Invoice Tax"
+msgstr "Impuesto de Comprobante"
+
+#. module: account
+#: code:addons/account/models/account.py:0
+#, python-format
+msgid ""
+"Invoice and credit note repartition should each contain exactly one line for"
+" the base."
+msgstr ""
+"La distribución de comprobantes y notas de crédito debe contener exactamente"
+" una línea para la base."
+
+#. module: account
+#: code:addons/account/models/account.py:0
+#, python-format
+msgid ""
+"Invoice and credit note repartition should have the same number of lines."
+msgstr ""
+"La distribución de comprobantes y notas de crédito debe contener el mismo "
+"número de líneas."
+
+#. module: account
+#: code:addons/account/models/account.py:0
+#, python-format
+msgid ""
+"Invoice and credit note repartitions should match (same percentages, in the "
+"same order)."
+msgstr ""
+"La distribución de comprobantes y notas de crédito deben coincidir (los "
+"mismos porcentajes, en el mismo orden)."
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_line_ids
+msgid "Invoice lines"
+msgstr "Líneas de comprobante"
+
+#. module: account
+#: model:mail.message.subtype,description:account.mt_invoice_paid
+msgid "Invoice paid"
+msgstr "Comprobante pagada"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
+msgid "Invoice send & Print"
+msgstr "Imprimir y enviar Comprobante"
+
+#. module: account
+#: model:mail.message.subtype,description:account.mt_invoice_validated
+msgid "Invoice validated"
+msgstr "Comprobante validado"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__invoice_date
+msgid "Invoice/Bill Date"
+msgstr "Fecha de Comprobante/Factura"
+
+#. module: account
+#: model:mail.template,report_name:account.email_template_edi_invoice
+msgid ""
+"Invoice_${(object.name or '').replace('/','_')}${object.state == 'draft' and"
+" '_draft' or ''}"
+msgstr ""
+"Comprobante_${(object.name or '').replace('/','_')}${object.state == 'draft' and"
+" '_borrador' or ''}"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+msgid "Invoiced"
+msgstr "Facturado"
+
+#. modules: account, l10n_latam_invoice_document
+#: model:ir.actions.act_window,name:account.action_move_out_invoice_type
+#: model:ir.actions.report,name:account.account_invoices
+#: model:ir.model.fields,field_description:account.field_account_invoice_send__invoice_ids
+#: model:ir.model.fields,field_description:account.field_account_payment__invoice_ids
+#: model:ir.model.fields,field_description:account.field_account_payment_register__invoice_ids
+#: model:ir.model.fields,field_description:account.field_res_partner__invoice_ids
+#: model:ir.model.fields,field_description:account.field_res_users__invoice_ids
+#: model:ir.ui.menu,name:account.menu_action_account_invoice_report_all
+#: model:ir.ui.menu,name:account.menu_action_move_out_invoice_type
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:account.portal_my_invoices
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+#: model_terms:ir.ui.view,arch_db:account.view_account_payment_graph
+#: model_terms:ir.ui.view,arch_db:account.view_invoice_tree
+#: model:ir.model.fields.selection,name:l10n_latam_invoice_document.selection__l10n_latam_document_type__internal_type__invoice
+msgid "Invoices"
+msgstr "Comprobantes"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.portal_my_home_invoice
+#: model_terms:ir.ui.view,arch_db:account.portal_my_home_menu_invoice
+msgid "Invoices &amp; Bills"
+msgstr "Comprobantes &amp; Facturas"
+
+#. module: account
+#: model:ir.actions.act_window,name:account.action_account_invoice_report_all
+#: model:ir.actions.act_window,name:account.action_account_invoice_report_all_supp
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_graph
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_pivot
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+msgid "Invoices Analysis"
+msgstr "Análisis de Comprobantes"
+
+#. module: account
+#: code:addons/account/models/chart_template.py:0
+#, python-format
+msgid "Invoices Matching Rule"
+msgstr "Regla de Coincidencia de Comprobantes"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model,name:l10n_latam_invoice_document.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "Estadísticas de Comprobantes"
+
+#. module: account
+#: code:addons/account/models/account_journal_dashboard.py:0
+#, python-format
+msgid "Invoices owed to you"
+msgstr "Comprobantes que le pertenecen"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+msgid "Invoices to Validate"
+msgstr "Comprobantes a validar"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_payment__reconciled_invoice_ids
+msgid "Invoices whose journal items have been reconciled with these payments."
+msgstr ""
+"Comprobantes cuyas partidas individuales se han reconciliado con estos pagos."
+
+#. module: account
+#: model:ir.actions.report,name:account.account_invoices_without_payment
+msgid "Invoices without Payment"
+msgstr "Comprobantes sin Pago"
+
+#. module: account
+#: model:ir.ui.menu,name:account.account_invoicing_menu
+#: model:ir.ui.menu,name:account.menu_finance
+#: model_terms:ir.ui.view,arch_db:account.digest_digest_view_form
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
+msgid "Invoicing"
+msgstr "Facturacion"
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_reconcile_model__match_amount__between
+#: model:ir.model.fields.selection,name:account.selection__account_reconcile_model_template__match_amount__between
+msgid "Is Between"
+msgstr "Entre"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__alias_name
+msgid "It creates draft invoices and bills by sending an email."
+msgstr "Crea borradores de comprobantes y facturas enviando un correo electrónico."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_move__invoice_sent
+msgid "It indicates that the invoice has been sent."
+msgstr "Indica que el comprobante ha sido enviado."
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__journal_type
+msgid "Journal Type"
+msgstr "Tipo de Diario"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move__l10n_latam_amount_untaxed
+msgid "L10N Latam Amount Untaxed"
+msgstr "Subtotal (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move__l10n_latam_available_document_type_ids
+msgid "L10N Latam Available Document Type"
+msgstr "Tipos de Comprobantes Disponibles (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_bank_statement_import_journal_creation__l10n_latam_company_use_documents
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_journal__l10n_latam_company_use_documents
+msgid "L10N Latam Company Use Documents"
+msgstr "Compañía Usa Documentos (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move_line__l10n_latam_price_net
+msgid "L10N Latam Price Net"
+msgstr "Precio Neto (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move_line__l10n_latam_price_subtotal
+msgid "L10N Latam Price Subtotal"
+msgstr "Precio Subtotal (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move_line__l10n_latam_price_unit
+msgid "L10N Latam Price Unit"
+msgstr "Precio Unitario (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move__l10n_latam_sequence_id
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move_reversal__l10n_latam_sequence_id
+msgid "L10N Latam Sequence"
+msgstr "Secuencia (L10N Latam)"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move__l10n_latam_tax_ids
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move_line__l10n_latam_tax_ids
+msgid "L10N Latam Tax"
+msgstr "Impuestos (L10N Latam)"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_tax__description
+msgid "Label on Invoices"
+msgstr "Etiqueta en Comprobantes"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_res_partner__last_time_entries_checked
+#: model:ir.model.fields,help:account.field_res_users__last_time_entries_checked
+msgid ""
+"Last time the invoices & payments matching was performed for this partner. "
+"It is set either if there's not at least an unreconciled debit and an "
+"unreconciled credit or if you click the \"Done\" button."
+msgstr ""
+"Última vez que se conciliaron comprobantes y pagos de este asociado. Se "
+"configura aunque no haya ningún débito o crédito por conciliar, o si "
+"pulsa el botón \"Hecho\"."
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_partner__last_time_entries_checked
+#: model:ir.model.fields,field_description:account.field_res_users__last_time_entries_checked
+msgid "Latest Invoices & Payments Matching Date"
+msgstr "Fecha de la Última Conciliación de Comprobantes y Pagos"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_fiscal_position__note
+msgid "Legal mentions that have to be printed on the invoices."
+msgstr "Menciones legales que se tienen que imprimir en los comprobantes."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Let your customers pay their invoices online"
+msgstr "Permita que sus clientes paguen sus comprobantes en línea"
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_reconcile_model__rule_type__invoice_matching
+#: model:ir.model.fields.selection,name:account.selection__account_reconcile_model_template__rule_type__invoice_matching
+msgid "Match existing invoices/bills."
+msgstr "Reconciliar comprobantes/facturas existentes."
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_partner__invoice_warn_msg
+#: model:ir.model.fields,field_description:account.field_res_users__invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "Mensaje para Comprobante"
+
+#. module: account
+#: model:ir.model.constraint,message:account.constraint_account_move_line_check_accountable_required_fields
+msgid "Missing required account on accountable invoice line."
+msgstr "Falta la cuenta requerida en la línea de comprobante contable."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Monitor your product margins from invoices"
+msgstr "Controle los márgenes de sus productos de los comprobantes"
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__move_ids
+msgid "Move"
+msgstr "Asiento"
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__move_type
+msgid "Move Type"
+msgstr "Tipo de Movimiento"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
+msgid "My Invoices"
+msgstr "Mis Comprobantes"
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_move_out_refund_type
+msgid ""
+"Note that the easiest way to create a credit note is to do it directly\n"
+"                from the customer invoice."
+msgstr ""
+"Tenga en cuenta que la manera más sencilla para crear una nota de "
+"crédito es crearla directamente desde el comprobante del cliente."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__credit_note_count
+msgid "Number of Credit Notes"
+msgstr "Número de Notas de Crédito"
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_move__debit_note_count
+msgid "Number of Debit Notes"
+msgstr "Número de Notas de Débito"
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_bank_statement_line
+msgid ""
+"Odoo allows you to reconcile a statement line directly with\n"
+"                the related sale or puchase invoice(s)."
+msgstr ""
+"Odoo le permite conciliar una línea de un extracto directamente con\n"
+"el(los) comprobante(s) de venta o compra relacionado(s)."
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.action_bank_statement_tree
+msgid ""
+"Odoo allows you to reconcile a statement line directly with\n"
+"                the related sale or puchase invoices."
+msgstr ""
+"Odoo le permite conciliar una línea de un extracto directamente con \n"
+"los comprobantes de venta o compra relacionados."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "Only invoices could be printed."
+msgstr "Solo se pueden imprimir comprobantes."
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_move__debit_origin_id
+msgid "Original Invoice Debited"
+msgstr "Comprobante Original Debitado"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
+msgid "Overdue invoices, maturity date passed"
+msgstr "Comprobantes vencidos, pasada la fecha de vencimiento"
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#, python-format
+msgid "Paid Invoices"
+msgstr "Comprobantes Pagados"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
+msgid "Payment Receipt:"
+msgstr "Recibo de Pago:"
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#, python-format
+msgid "Payments without a customer can't be matched"
+msgstr "Los pagos sin cliente no pueden ser conciliados"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "Please set a date for the invoice."
+msgstr "Por favor fije una fecha para el comprobante."
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_l10n_latam_document_type__doc_code_prefix
+msgid ""
+"Prefix for Documents Codes on Invoices and Account Moves. For eg. 'FA ' will"
+" build 'FA 0001-0000001' Document Number"
+msgstr ""
+"Prefijo para Códigos de Documentos en Comprobantes y Asientos. P. ej.: 'FA '"
+" generará el Número de Documento 'FA 0001-0000001'"
+
+#. module: account
+#: model:ir.model,name:account.model_account_reconcile_model
+msgid ""
+"Preset to create journal entries during a invoices and payments matching"
+msgstr ""
+"Preajuste para crear asientos durante la conciliación de comprobantes y pagos"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__qr_binary
+msgid "QR Code"
+msgstr "Código QR"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__qr
+msgid "QR Code Content"
+msgstr "Contenido del Código QR"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__qr_binary_filename
+msgid "QR Code Filename"
+msgstr "Nombre de Archivo del Código QR"
+
+#. module: account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__reason
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_payment__reconciled_invoice_ids
+msgid "Reconciled Invoices"
+msgstr "Comprobantes Conciliados"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_payment__reconciled_invoices_count
+msgid "Reconciled Invoices Count"
+msgstr "Cantidad de Comprobantes Conciliados"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_tax__invoice_repartition_line_ids
+#: model:ir.model.fields,help:account.field_account_tax_template__invoice_repartition_line_ids
+msgid "Repartition when the tax is used on an invoice"
+msgstr "Repartición cuando el impuesto se usa en un comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__sunat_code
+msgid "Response code received from SUNAT"
+msgstr "Código de respuesta recibido de SUNAT"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__reversal_move_id
+msgid "Reversal Move"
+msgstr "Movimiento de Reversión"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "SEPA Direct Debit (SDD)"
+msgstr "Débito Directo SEPA (SDD)"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__pass_sol
+msgid "SOL Password"
+msgstr "Contraseña SOL"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__user_sol
+msgid "SOL User"
+msgstr "Usuario SOL"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sunat_answer
+msgid "SUNAT Answer"
+msgstr "Respuesta SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sunat_digest_value
+msgid "SUNAT DigestValue"
+msgstr "DigestValue SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sunat_code
+msgid "SUNAT Response Code"
+msgstr "Código de Respuesta SUNAT"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_sample_invoice_step
+msgid "Sample Invoice"
+msgstr "Comprobante Ejemplo"
+
+#. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Sample invoice"
+msgstr "Comprobante ejemplo"
+
+#. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Sample invoice line name"
+msgstr "Nombre de línea de comprobante ejemplo"
+
+#. module: account
+#: code:addons/account/models/company.py:0
+#, python-format
+msgid "Sample invoice line name 2"
+msgstr "Nombre de línea de comprobante ejemplo 2"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_sample_invoice_step
+msgid "Sample invoice sent!"
+msgstr "¡Comprobante ejemplo enviado!"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
+msgid "Search Invoice"
+msgstr "Buscar Comprobante"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__type
+msgid ""
+"Select 'Sale' for customer invoices journals.\n"
+"Select 'Purchase' for vendor bills journals.\n"
+"Select 'Cash' or 'Bank' for journals that are used in customer or vendor payments.\n"
+"Select 'General' for miscellaneous operations journals."
+msgstr ""
+"Seleccione 'Ventas' para diarios de comprobantes de cliente.\n"
+"Seleccione 'Compras' para diarios de facturas de proveedor.\n"
+"Seleccione 'Caja' o 'Banco' para diarios que se usan para pagos de clientes y proveedores.\n"
+"Seleccione 'General' para diarios que contienen operaciones varias."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#: code:addons/account/wizard/account_invoice_send.py:0
+#, python-format
+msgid "Send Invoice"
+msgstr "Enviar Comprobante"
+
+#. module: account
+#: model:ir.actions.act_window,name:account.action_open_account_onboarding_sample_invoice
+msgid "Send a sample invoice"
+msgstr "Enviar un comprobante ejemplo"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.onboarding_sample_invoice_step
+msgid "Send an invoice to test the customer portal."
+msgstr "Enviar un comprobante para probar el portal del cliente."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Send invoices and payment follow-ups by post"
+msgstr "Enviar comprobantes y seguimientos de pagos por correo"
+
+#. module: mouse_einvoice_base
+#: model:ir.actions.server,name:mouse_einvoice_base.ir_cron_send_sunat_ir_actions_server
+#: model:ir.cron,cron_name:mouse_einvoice_base.ir_cron_send_sunat
+#: model:ir.cron,name:mouse_einvoice_base.ir_cron_send_sunat
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_move_form
+msgid "Send to SUNAT"
+msgstr "Enviar a SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sent_sunat
+msgid "Sent to SUNAT"
+msgstr "Enviado a SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sent_sunat_beta
+msgid "Sent to SUNAT Beta"
+msgstr "Enviado al Beta de SUNAT"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
+msgid "Show standard terms &amp; conditions on invoices/orders"
+msgstr "Mostrar términos y condiciones estándar en comprobantes/pedidos"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml_binary
+msgid "Signed XML"
+msgstr "XML Firmado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml_digest_value
+msgid "Signed XML DigestValue"
+msgstr "DigestValue del XML Firmado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml_binary_filename
+msgid "Signed XML Filename"
+msgstr "Nombre de Archivo del XML Firmado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__signed_xml_binary
+msgid "Signed XML representation of the invoice"
+msgstr "Representación XML firmada del comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml
+msgid "Signed Raw XML"
+msgstr "XML Firmado Puro"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_cash_rounding__strategy
+msgid ""
+"Specify which way will be used to round the invoice amount to the rounding "
+"precision"
+msgstr ""
+"Especifique qué modo se utilizará para redondear el importe del comprobante "
+"a la precisión de redondeo"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_company__account_invoice_onboarding_state
+msgid "State of the account invoice onboarding panel"
+msgstr "Estado del panel de incorporación del comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_company__account_onboarding_invoice_layout_state
+msgid "State of the onboarding invoice layout step"
+msgstr "Estado del paso de diseño del comprobante de incorporación"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_company__account_onboarding_sample_invoice_state
+msgid "State of the onboarding sample invoice step"
+msgstr "Estado del paso del comprobante ejemplo de incorporación"
+
+#. module: account
+#: model:ir.actions.server,name:account.action_move_switch_invoice_to_credit_note
+msgid "Switch into refund/credit note"
+msgstr "Cambiar a reembolso/nota de crédito"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "Tax ID"
+msgstr "RUC"
+
+#. module: account
+#: code:addons/account/models/chart_template.py:0
+#, python-format
+msgid ""
+"Tax repartition line templates should apply to either invoices or refunds, "
+"not both at the same time. invoice_tax_id and refund_tax_id should not be "
+"set together."
+msgstr ""
+"Las plantillas de línea de reparto de impuestos deben aplicarse "
+"a comprobantes o reembolsos, no a ambos al mismo tiempo. "
+"invoice_tax_id y refund_tax_id no deben establecerse juntos."
+
+#. module: account
+#: code:addons/account/models/account.py:0
+#, python-format
+msgid ""
+"Tax repartition lines should apply to either invoices or refunds, not both "
+"at the same time. invoice_tax_id and refund_tax_id should not be set "
+"together."
+msgstr ""
+"Las líneas de reparto de impuestos deben aplicarse a comprobantes o "
+"reembolsos, no a ambos al mismo tiempo. invoice_tax_id y refund_tax_id no "
+"deben establecerse juntos."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_payment__invoice_ids
+msgid ""
+"Technical field containing the invoice for which the payment has been generated.\n"
+"                                   This does not especially correspond to the invoices reconciled with the payment,\n"
+"                                   as it can have been generated first, and reconciled later"
+msgstr ""
+"Campo técnico que contiene el comprobante para el que se ha generado el pago.\n"
+"                                   Esto no corresponde especialmente a los comprobantes conciliadas con el pago,\n"
+"                                   ya que puede haber sido generado primero y reconciliado después"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_move__tax_lock_date_message
+msgid ""
+"Technical field used to display a message when the invoice's accounting date"
+" is prior of the tax lock date."
+msgstr ""
+"Campo técnico utilizado para mostrar un mensaje cuando la fecha contable del"
+" comprobante es anterior a la fecha de bloqueo de impuestos."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_move__invoice_has_matching_suspense_amount
+msgid ""
+"Technical field used to display an alert on invoices if there is at least a "
+"matching amount in any supsense account."
+msgstr ""
+"Campo técnico utilizado para mostrar una alerta en los comprobantes si hay "
+"al menos un importe equivalente en cualquier cuenta de suspenso."
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_bank_statement_import_journal_creation__l10n_latam_country_code
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_journal__l10n_latam_country_code
+#: model:ir.model.fields,help:l10n_latam_invoice_document.field_account_move__l10n_latam_country_code
+msgid "Technical field used to hide/show fields regarding the localization"
+msgstr ""
+"Campo técnico usado para esconder/mostrar"
+" campos dependiendo de la localización"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_move__narration
+msgid "Terms and Conditions"
+msgstr "Términos y Condiciones"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The VAT identification number of the client is not valid."
+msgstr "El número de RUC del cliente no es válido."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The VAT identification number of the user's company is not valid."
+msgstr "El número de RUC de la compañía del usuario no es válido."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid ""
+"The accounting date is prior to the tax lock date which is set on %s. Then, "
+"this will be moved to the next available one during the invoice validation."
+msgstr ""
+"La fecha contable es anterior a la fecha de bloqueo de impuestos que se "
+"establece en %s. Después, esto se moverá al siguiente disponible durante la "
+"validación del comprobante."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_reversal
+msgid "The credit note is auto-validated and reconciled with the invoice."
+msgstr ""
+"La nota de crédito se valida automáticamente y se concilia con "
+"el comprobante."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_reversal
+msgid ""
+"The credit note is auto-validated and reconciled with the invoice.\n"
+"                               The original invoice is duplicated as a new draft."
+msgstr ""
+"La nota de crédito se valida automáticamente y se concilia con el comprobante.\n"
+"                               El comprobante original se duplica como un nuevo borrador."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_move_reversal
+msgid ""
+"The credit note is created in draft and can be edited before being issued."
+msgstr ""
+"La nota de crédito se crea en borrador y puede ser editada antes de "
+"expedirse."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__credit_note_ids
+msgid "The credit notes created for this invoice"
+msgstr "Las notas de crédito creadas para este comprobante"
+
+#. module: account_debit_note
+#: model:ir.model.fields,help:account_debit_note.field_account_move__debit_note_ids
+msgid "The debit notes created for this invoice"
+msgstr "Las notas de débito creadas para este comprobante"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The digital certificate file is erroneous.\n"
+msgstr "El archivo del certificado digital presenta errores.\n"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_move__invoice_origin
+msgid "The document(s) that generated the invoice."
+msgstr "El(Los) documento(s) que generaron el comprobante."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid ""
+"The field 'Customer' is required, please complete it to validate the "
+"Customer Invoice."
+msgstr ""
+"El campo 'Cliente' es obligatorio, complételo para validar el Comprobante "
+"del Cliente."
+
+#. module: account
+#: code:addons/account/wizard/account_invoice_send.py:0
+#, python-format
+msgid ""
+"The following invoice(s) will not be sent by email, because the customers "
+"don't have email address."
+msgstr ""
+"El(Los) siguiente(s) comprobante(s) no se enviarán por correo, porque los "
+"clientes no tienen correo electrónico. "
+
+#. module: l10n_latam_invoice_document
+#: code:addons/l10n_latam_invoice_document/models/account_move.py:0
+#, python-format
+msgid ""
+"The journal require a document type but not document type has been selected "
+"on invoices %s."
+msgstr ""
+"El diario requiere un tipo de documento pero no hay tipo de documento "
+"seleccionado en los comprobantes %s."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__refund_sequence_number_next
+msgid "The next sequence number will be used for the next credit note."
+msgstr ""
+"El siguiente número de secuencia que se usará para la siguiente nota "
+"de crédito."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__sequence_number_next
+msgid "The next sequence number will be used for the next invoice."
+msgstr "El siguiente número de secuencia se usará para el próximo comprobante."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_tax_repartition_line__sequence
+msgid ""
+"The order in which display and match repartition lines. For refunds to work "
+"properly, invoice repartition lines should be arranged in the same order as "
+"the credit note repartition lines they correspond to."
+msgstr ""
+"El orden en que se muestran y coinciden las líneas de reparto. Para que los "
+"reembolsos funcionen correctamente, las líneas de reparto de comprobantes "
+"deben organizarse en el mismo orden que las líneas de reparto de las notas "
+"de crédito a las que corresponden."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_res_partner__has_unreconciled_entries
+#: model:ir.model.fields,help:account.field_res_users__has_unreconciled_entries
+msgid ""
+"The partner has at least one unreconciled debit and credit since last time "
+"the invoices & payments matching was performed."
+msgstr ""
+"El asociado tiene al menos un débito o crédito no conciliado desde la última"
+" vez que se realizó la conciliación de comprobantes y pagos."
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#, python-format
+msgid "The payment cannot be processed because the invoice is not open!"
+msgstr "¡No se puede procesar el pago porque el comprobante no está validado!"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_tax_repartition_line__invoice_tax_id
+#: model:ir.model.fields,help:account.field_account_tax_repartition_line_template__invoice_tax_id
+msgid ""
+"The tax set to apply this repartition on invoices. Mutually exclusive with "
+"refund_tax_id"
+msgstr ""
+"El impuesto establecido para aplicar esta distribución en los comprobantes. "
+"Mutuamente exclusivo con refund_tax_id"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_tax_repartition_line__refund_tax_id
+#: model:ir.model.fields,help:account.field_account_tax_repartition_line_template__refund_tax_id
+msgid ""
+"The tax set to apply this repartition on refund invoices. Mutually exclusive"
+" with invoice_tax_id"
+msgstr ""
+"El impuesto establecido para aplicar esta distribución en las notas"
+" de crédito. Mutuamente exclusivo con invoice_tax_id"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The user's company must have a VAT identification."
+msgstr "La compañía del usuario debe estar identificada por un RUC."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.portal_my_invoices
+msgid "There are currently no invoices and payments for your account."
+msgstr "Actualmente no hay comprobantes ni pagos para su cuenta."
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#, python-format
+msgid ""
+"There is more than one receivable/payable account in the concerned invoices."
+" You cannot group payments in that case."
+msgstr ""
+"Hay más de una cuenta por cobrar/a pagar en los comprobantes involucradas."
+" No puede agrupar pagos en ese caso."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_product_category__property_account_income_categ_id
+msgid "This account will be used when validating a customer invoice."
+msgstr "Esta cuenta se usará al validar un comprobante de cliente."
+
+#. module: account_debit_note
+#: code:addons/account_debit_note/wizard/account_debit_note.py:0
+#, python-format
+msgid "This debit note was created from:"
+msgstr "Esta nota de débito fue creada de:"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_res_partner__property_payment_term_id
+#: model:ir.model.fields,help:account.field_res_users__property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sales orders "
+"and customer invoices"
+msgstr ""
+"Este plazo de pago se utilizará en lugar del predeterminado para pedidos y "
+"comprobantes de clientes"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
+msgid "Unpaid Invoices"
+msgstr "Comprobantes por pagar"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__unsigned_xml_binary
+msgid "Unsigned XML"
+msgstr "XML sin Firmar"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__unsigned_xml_binary_filename
+msgid "Unsigned XML Filename"
+msgstr "Nombre de Archivo del XML sin Firmar"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__unsigned_xml_binary
+msgid "Unsigned XML representation of the invoice"
+msgstr "Representación XML sin firmar del comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__unsigned_xml
+msgid "Unsigned Raw XML"
+msgstr "XML sin Firmar Puro"
+
+#. module: l10n_latam_invoice_document
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_bank_statement_import_journal_creation__l10n_latam_use_documents
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_journal__l10n_latam_use_documents
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move__l10n_latam_use_documents
+#: model:ir.model.fields,field_description:l10n_latam_invoice_document.field_account_move_reversal__l10n_latam_use_documents
+msgid "Use Documents?"
+msgstr "¿Usa Documentos?"
+
+#. modules: mouse_einvoice_base, account_debit_note
+#: model:ir.model.fields,field_description:account_debit_note.field_account_debit_note__journal_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move_reversal__journal_id
+msgid "Use Specific Journal"
+msgstr "Usar un Diario Específico"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_fiscal_position__vat_required
+#: model:ir.model.fields,field_description:account.field_account_fiscal_position_template__vat_required
+msgid "VAT required"
+msgstr "Requiere IGV"
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#: model:ir.model.fields.selection,name:account.selection__account_invoice_report__type__in_refund
+#: model:ir.model.fields.selection,name:account.selection__account_move__type__in_refund
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+#, python-format
+msgid "Vendor Credit Note"
+msgstr "Nota de Crédito de Proveedor"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.partner_view_buttons
+msgid "Warning on the Invoice"
+msgstr "Aviso en el Comprobante"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_res_config_settings__group_warning_account
+msgid "Warnings in Invoices"
+msgstr "Avisos en Comprobantes"
+
+#. module: l10n_latam_invoice_document
+#: code:addons/l10n_latam_invoice_document/models/account_move.py:0
+#, python-format
+msgid "We do not accept the usage of document types on receipts yet. "
+msgstr "Aún no se acepta el uso de tipos de documento en recibos."
+
+#. module: l10n_latam_invoice_document
+#: code:addons/l10n_latam_invoice_document/models/account_journal.py:0
+#, python-format
+msgid ""
+"You can not modify the field \"Use Documents?\" if there are validated "
+"invoices in this journal!"
+msgstr ""
+"¡No puede modificar el campo \"¿Usa Documentos?\" si ya existen "
+"comprobantes validados en este diario!"
+
+#. module: l10n_latam_invoice_document
+#: code:addons/l10n_latam_invoice_document/models/account_move.py:0
+#, python-format
+msgid "You can not use a %s document type with a invoice"
+msgstr "No puede utilizar el tipo de documento %s en un comprobante"
+
+#. module: l10n_latam_invoice_document
+#: code:addons/l10n_latam_invoice_document/models/account_move.py:0
+#, python-format
+msgid "You can not use a %s document type with a refund invoice"
+msgstr ""
+"No puedes utilizar el tipo de documento %s en un reembolso"
+
+#. module: account_debit_note
+#: code:addons/account_debit_note/wizard/account_debit_note.py:0
+#, python-format
+msgid "You can only debit posted moves."
+msgstr "Solo puede debitar movimientos validados."
+
+#. module: l10n_latam_invoice_document
+#: code:addons/l10n_latam_invoice_document/wizards/account_move_reversal.py:0
+#, python-format
+msgid ""
+"You can only reverse documents with legal invoicing documents from Latin America one at a time.\n"
+"Problematic documents: %s"
+msgstr ""
+"Solo puede revertir documentos de facturación legales en América Latina uno a la vez.\n"
+"Documentos problemáticos: %s"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You can only send a posted invoice to SUNAT."
+msgstr "Solo puede enviar un comprobante validado a SUNAT."
+
+#. module: account
+#: code:addons/account/wizard/account_invoice_send.py:0
+#, python-format
+msgid "You can only send invoices."
+msgstr "Solo puede enviar comprobante."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid ""
+"You can only set an account having the receivable type on payment terms "
+"lines for customer invoice."
+msgstr ""
+"Solo puede establecer una cuenta que tenga el tipo de cuenta por cobrar en "
+"las líneas de condiciones de pago para el comprobante del cliente."
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_journal__invoice_reference_type
+msgid ""
+"You can set here the default communication that will appear on customer "
+"invoices, once validated, to help the customer to refer to that particular "
+"invoice when making the payment."
+msgstr ""
+"Puede establecer aquí la comunicación predeterminada que aparecerá en los "
+"comprobantes del cliente, una vez validados, para ayudar al cliente a consultar "
+"ese comprobante en particular al realizar el pago."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post an invoice of type %s for a client that"
+" has a VAT identification number"
+msgstr ""
+"No puede validar un comprobante de tipo %s para un"
+" cliente con RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post an invoice of type %s for a client without"
+" a VAT identification number"
+msgstr ""
+"No puede validar un comprobante de tipo %s para un"
+" cliente sin RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post the invoices because the client of an invoice"
+" of type %s doesn't have a VAT identification number"
+msgstr ""
+"No puede validar los comprobantes porque el cliente de un "
+"comprobante de tipo %s no posee RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post the invoices because the client of an invoice"
+" of type %s has a VAT identification number"
+msgstr ""
+"No puede validar los comprobantes porque el cliente de un "
+"comprobante de tipo %s posee RUC"
+
+#. module: account
+#: code:addons/account/models/account_payment.py:0
+#, python-format
+msgid ""
+"You cannot register payments for customer invoices and credit notes at the "
+"same time."
+msgstr ""
+"No puede registrar pagos para comprobantes de clientes y notas de crédito"
+" al mismo tiempo."
+
+#. module: account
+#: code:addons/account/models/account_move.py:0
+#, python-format
+msgid "You don't have the access rights to post an invoice."
+msgstr "No tiene los derechos de acceso para contabilizar un comprobante."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "You have suspense account moves that match this invoice."
+msgstr ""
+"Tiene movimientos de cuenta de suspenso que coinciden con"
+" este comprobante."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You must set the VAT identification number of the client."
+msgstr "Debe definir el RUC del cliente."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You must set the VAT identification number of the user's company."
+msgstr "Debe definir el RUC de la compañía del usuario."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You must set the identification type of the user's company"
+msgstr "Debe definir el tipo de documento de la compañía del usuario."
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "assign to invoice"
+msgstr "asignar al comprobante"
+
+#. module: account
+#: model:ir.model.fields.selection,name:account.selection__account_payment_term_line__option__day_after_invoice_date
+msgid "days after the invoice date"
+msgstr "días después de la fecha del comprobante"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_move_form
+msgid "e-Invoicing"
+msgstr "Facturación Electrónica"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_company_form
+msgid "e-Invoicing Data"
+msgstr "Datos de Facturación Electrónica"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "for this customer. You can allocate them to mark this invoice as paid."
+msgstr ""
+"para este cliente. Puede asignarlos para marcar este comprobante como pagado."
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_invoice_send__invoice_without_email
+msgid "invoice(s) that will not be sent"
+msgstr "comprobante(s) que no van a ser enviadas"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "on"
+msgstr "en"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "to mark this invoice as paid."
+msgstr "para marcar este comprobante como pagado."
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/xml/account_reconciliation.xml:0
+#, python-format
+msgid "unpaid invoices"
+msgstr "comprobantes sin pago"
