@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_company_form">
+			<field name="name">res.company.form</field>
+			<field name="model">res.company</field>
+			<field name="inherit_id" ref="base.view_company_form"/>
+            <field name="priority" eval="17"/>
+			<field name="arch" type="xml">
+                <xpath expr="//field[@name='vat']" position="attributes">
+                    <attribute name="placeholder">Number...</attribute>
+                    <!-- blame partner_autocomplete for the priority and this -->
+                    <attribute name="widget"/>
+                </xpath>
+                <xpath expr="//field[@name='company_registry']" position="before">
+                    <label name="l10n_latam_identification_type_id" for="l10n_latam_identification_type_id" string="Identification Number"/>
+                    <div name="mouse_l10n_latam_vat" class="o_row">
+                        <field name="l10n_latam_identification_type_id" placeholder="Type..." readonly="1" options="{'no_open': True, 'no_create': True}" attrs="{'invisible': ['|', ('country_id','!=',%(base.pe)d), ('id','=',False)]}"/>
+                        <span name="mouse_l10n_latam_vat_separator" class="oe_read_only" attrs="{'invisible': ['|', ('l10n_latam_identification_type_id','=',False), ('vat','=',False)]}"> - </span>
+                    </div>
+                </xpath>
+                <xpath expr="//span[@name='mouse_l10n_latam_vat_separator']" position="after">
+                    <xpath expr="//field[@name='vat']" position="move"/>
+                </xpath>
+			</field>
+		</record>
+    </data>
+</odoo>

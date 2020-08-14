@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="external_layout_background" inherit_id="web.external_layout_background">
+        <xpath expr="//ul/li[4]/i" position="after">
+            <t t-if="company.partner_id.l10n_latam_identification_type_id" t-esc="company.partner_id.l10n_latam_identification_type_id.name"/>
+            <t t-else=""/>
+        </xpath>
+        <xpath expr="//ul/li[4]/t[2]" position="inside">
+            <xpath expr="//ul/li[4]/t[3]" position="move"/>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_boxed" inherit_id="web.external_layout_boxed">
+        <xpath expr="//ul/li[4]/t[1]" position="before">
+            <t t-if="company.partner_id.l10n_latam_identification_type_id" t-esc="company.partner_id.l10n_latam_identification_type_id.name"/>
+            <t t-else=""/>
+        </xpath>
+        <xpath expr="//ul/li[4]/t[2]" position="inside">
+            <xpath expr="//ul/li[4]/t[3]" position="move"/>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_clean" inherit_id="web.external_layout_clean">
+        <xpath expr="//ul/li[1]/t[1]" position="before">
+            <t t-if="company.partner_id.l10n_latam_identification_type_id" t-esc="company.partner_id.l10n_latam_identification_type_id.name"/>
+            <t t-else=""/>
+        </xpath>
+        <xpath expr="//ul/li[1]/t[2]" position="inside">
+            <xpath expr="//ul/li[1]/t[3]" position="move"/>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_standard" inherit_id="web.external_layout_standard">
+        <xpath expr="//ul/li[4]/t[1]" position="before">
+            <t t-if="company.partner_id.l10n_latam_identification_type_id" t-esc="company.partner_id.l10n_latam_identification_type_id.name"/>
+            <t t-else=""/>
+        </xpath>
+        <xpath expr="//ul/li[4]/t[2]" position="inside">
+            <xpath expr="//ul/li[4]/t[3]" position="move"/>
+        </xpath>
+    </template>
+</odoo>

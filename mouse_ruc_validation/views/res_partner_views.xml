@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="l10n_latam_base.view_partner_latam_form" model="ir.ui.view">
+            <field name="active" eval="False"/>
+        </record>
+        
+        <record id="view_partner_form" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="priority" eval="17"/>
+            <field name="arch" type="xml">
+                <!--
+                <xpath expr="//span[hasclass('o_vat_label')]" position="replace">
+                    <span class="o_vat_label">Doc. de Identidad</span>
+                </xpath>
+                -->
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button string="Update DNI/RUC data" type="object" name="update_l10n_latam_vat"/>
+                        <field name="sunat_state" widget="statusbar" nolabel="1" statusbar_visible="known, unknown" statusbar_colors="{'known': 'green', 'unknown': 'red'}"/>
+                    </header>
+                </xpath>
+                <xpath expr="//field[@name='company_type']" position="after">
+                    <group name="full_names" invisible="1" attrs="{'invisible': ['|', '|', ('first_surname','=',False), ('second_surname','=',False), ('given_names','=',False)]}">
+                        <field name="first_surname"/>
+                        <field name="second_surname"/>
+                        <field name="given_names"/>
+                    </group>
+                </xpath>
+                <!--
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <atrribute name="attrs">{'invisible': [('first_surname','!=',False), ('second_surname','!=',False), ('given_names','!=',False)]}</attribute>
+                </xpath>
+                -->
+                <xpath expr="//div[@class='o_row']" position="before">
+                    <group>
+                        <label name="registration_name" for="registration_name"/>
+                        <div name="registration_name" class="o_row">
+                            <field name="registration_name" placeholder="Registration name..."/>
+                        </div>
+                        <label name="commercial_name" for="commercial_name" attrs="{'invisible': [('company_type','=','person')]}"/>
+                        <div name="commercial_name" class="o_row" attrs="{'invisible': [('company_type','=','person')]}">
+                            <field name="commercial_name" placeholder="Commercial name..."/>
+                        </div>
+                        <label name="l10n_latam_identification_type_id" for="l10n_latam_identification_type_id" string="Identification Number"/>
+                        <div name="mouse_l10n_pe_identification" class="o_row">
+                            <field name="l10n_latam_identification_type_id" placeholder="Type..." options="{'no_open': True, 'no_create': True}" domain="country_id==173 and [('l10n_pe_vat_code','!=',False)] or []"/>
+                            <span name="mouse_l10n_pe_separator" class="oe_read_only" attrs="{'invisible': ['|', ('l10n_latam_identification_type_id','=',False), ('vat','=',False)]}"> - </span>
+                        </div>
+                    </group>
+                </xpath>
+                <xpath expr="//field[@name='vat']" position="attributes">
+                    <attribute name="placeholder">Number...</attribute>
+                    <!-- blame partner_autocomplete for the priority and this -->
+                    <attribute name="widget"/>
+                </xpath>
+                <xpath expr="//span[@name='mouse_l10n_pe_separator']" position="after">
+                    <xpath expr="//field[@name='vat']" position="move"/>
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="res_partner_kanban_view" model="ir.ui.view">
+            <field name="name">res.partner.kanban</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('oe_kanban_details')]/ul/li[1]" position="before">
+                    <li t-if="record.vat.raw_value"><t t-if="record.l10n_latam_identification_type_id.raw_value"><field name="l10n_latam_identification_type_id"/> - </t><field name="vat"/></li>
+                </xpath>
+            </field>
+        </record>
+        
+        <record id="view_res_partner_filter" model="ir.ui.view">
+            <field name="name">res.partner.select</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="filter_domain">['|', '|', '|', ('display_name','ilike',self), ('ref','=',self), ('email','ilike',self), ('vat','ilike',self)]</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
