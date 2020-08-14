@@ -1,0 +1,118 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mouse_ruc_validation
+# 	* l10n_pe
+# 	* l10n_latam_base
+# 	* mouse_toponyms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 22:59+0000\n"
+"PO-Revision-Date: 2020-07-09 22:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_partner__commercial_name
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_users__commercial_name
+msgid "Commercial name"
+msgstr "Nombre comercial"
+
+#. module: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_partner_form
+msgid "Commercial name..."
+msgstr "Nombre comercial..."
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_partner__first_surname
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_users__first_surname
+msgid "First surname"
+msgstr "Apellido paterno"
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_partner__given_names
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_users__given_names
+msgid "Given name(s)"
+msgstr "Nombres"
+
+#. modules: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_company_form
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_partner_form
+msgid "Identification Number"
+msgstr "Doc. Identidad"
+
+#. modules: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_company__l10n_latam_identification_type_id
+msgid "Identification Type"
+msgstr "Tipo de Identificación"
+
+#. modules: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_l10n_latam_identification_type_form
+msgid "Identification Types"
+msgstr "Tipos de Identificación"
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields.selection,name:mouse_ruc_validation.selection__res_partner__sunat_state__known
+msgid "Known"
+msgstr "Habido"
+
+#. module: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_company_form
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_partner_form
+msgid "Number..."
+msgstr "Número..."
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_partner__registration_name
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_users__registration_name
+msgid "Registration name"
+msgstr "Razón social"
+
+#. module: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_partner_form
+msgid "Registration name..."
+msgstr "Razón social..."
+
+#. modules: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_l10n_latam_identification_type__l10n_pe_vat_code
+msgid "SUNAT code"
+msgstr "Código SUNAT"
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_partner__sunat_state
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_users__sunat_state
+msgid "SUNAT state"
+msgstr "Estado SUNAT"
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_partner__second_surname
+#: model:ir.model.fields,field_description:mouse_ruc_validation.field_res_users__second_surname
+msgid "Second surname"
+msgstr "Apellido materno"
+
+#. modules: mouse_ruc_validation
+#: model:ir.model.fields,help:mouse_ruc_validation.field_res_company__l10n_latam_identification_type_id
+msgid "The type of identification"
+msgstr "Tipo de identificación"
+
+#. module: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_company_form
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_partner_form
+msgid "Type..."
+msgstr "Tipo..."
+
+#. module: mouse_ruc_validation
+#: model:ir.model.fields.selection,name:mouse_ruc_validation.selection__res_partner__sunat_state__unknown
+msgid "Unknown"
+msgstr "No habido"
+
+#. module: mouse_ruc_validation
+#: model_terms:ir.ui.view,arch_db:mouse_ruc_validation.view_partner_form
+msgid "Update DNI/RUC data"
+msgstr "Actualizar datos DNI/RUC"

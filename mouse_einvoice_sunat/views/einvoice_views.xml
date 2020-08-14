@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_einvoice_templ_tree" model="ir.ui.view">
+            <field name="name">einvoice.templ.tree</field>
+            <field name="model">einvoice.templ</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree create="0" edit="0" delete="0" string="Plantilla para Códigos de la SUNAT">
+                    <field name="code"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_einvoice_templ_form" model="ir.ui.view">
+            <field name="name">einvoice.templ.form</field>
+            <field name="model">einvoice.templ</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Plantilla para Códigos de la SUNAT">
+                    <group>
+                        <group>
+                            <field name="code" readonly="1"/>
+                            <field name="name" readonly="1"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_einvoice_01_tree" model="ir.ui.view">
+            <field name="name">einvoice.01.tree</field>
+            <field name="model">einvoice.01</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Comprobante</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_01_form" model="ir.ui.view">
+            <field name="name">einvoice.01.form</field>
+            <field name="model">einvoice.01</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Comprobante</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_01_action">
+            <field name="name">Códigos de Tipo de Comprobante</field>
+            <field name="res_model">einvoice.01</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_05_tree" model="ir.ui.view">
+            <field name="name">einvoice.05.tree</field>
+            <field name="model">einvoice.05</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Tributo</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="un_5153"/>
+                    <field name="impuesto"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_05_form" model="ir.ui.view">
+            <field name="name">einvoice.05.form</field>
+            <field name="model">einvoice.05</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Tributo</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="un_5153" readonly="1"/>
+                    <field name="impuesto" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_05_action">
+            <field name="name">Códigos de Tipo de Tributo</field>
+            <field name="res_model">einvoice.05</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_07_tree" model="ir.ui.view">
+            <field name="name">einvoice.07.tree</field>
+            <field name="model">einvoice.07</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Afectación del IGV</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="un_5305"/>
+                    <field name="onerosa"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_07_form" model="ir.ui.view">
+            <field name="name">einvoice.07.form</field>
+            <field name="model">einvoice.07</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Afectación del IGV</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="un_5305" readonly="1"/>
+                    <field name="onerosa" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_07_action">
+            <field name="name">Códigos de Tipo de Afectación del IGV</field>
+            <field name="res_model">einvoice.07</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_08_tree" model="ir.ui.view">
+            <field name="name">einvoice.08.tree</field>
+            <field name="model">einvoice.08</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Sistema de Cálculo del ISC</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_08_form" model="ir.ui.view">
+            <field name="name">einvoice.08.form</field>
+            <field name="model">einvoice.08</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Sistema de Cálculo del ISC</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_08_action">
+            <field name="name">Códigos de Tipo de Sistema de Cálculo del ISC</field>
+            <field name="res_model">einvoice.08</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_09_tree" model="ir.ui.view">
+            <field name="name">einvoice.09.tree</field>
+            <field name="model">einvoice.09</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Nota de Crédito Electrónica</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_09_form" model="ir.ui.view">
+            <field name="name">einvoice.09.form</field>
+            <field name="model">einvoice.09</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Nota de Crédito Electrónica</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_09_action">
+            <field name="name">Códigos de Tipo de Nota de Crédito Electrónica</field>
+            <field name="res_model">einvoice.09</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_10_tree" model="ir.ui.view">
+            <field name="name">einvoice.10.tree</field>
+            <field name="model">einvoice.10</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Nota de Débito Electrónica</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_10_form" model="ir.ui.view">
+            <field name="name">einvoice.10.form</field>
+            <field name="model">einvoice.10</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Nota de Débito Electrónica</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_10_action">
+            <field name="name">Códigos de Tipo de Nota de Débito Electrónica</field>
+            <field name="res_model">einvoice.10</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_11_tree" model="ir.ui.view">
+            <field name="name">einvoice.11.tree</field>
+            <field name="model">einvoice.11</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Valor de Venta</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="un_5305"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_11_form" model="ir.ui.view">
+            <field name="name">einvoice.11.form</field>
+            <field name="model">einvoice.11</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Valor de Venta</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="un_5305" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_11_action">
+            <field name="name">Códigos de Tipo de Valor de Venta</field>
+            <field name="res_model">einvoice.11</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_12_tree" model="ir.ui.view">
+            <field name="name">einvoice.12.tree</field>
+            <field name="model">einvoice.12</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Documentos Relacionados Tributarios</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_12_form" model="ir.ui.view">
+            <field name="name">einvoice.12.form</field>
+            <field name="model">einvoice.12</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Documentos Relacionados Tributarios</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_12_action">
+            <field name="name">Códigos de Documentos Relacionados Tributarios</field>
+            <field name="res_model">einvoice.12</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_14_tree" model="ir.ui.view">
+            <field name="name">einvoice.14.tree</field>
+            <field name="model">einvoice.14</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Otros Conceptos Tributarios</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_14_form" model="ir.ui.view">
+            <field name="name">einvoice.14.form</field>
+            <field name="model">einvoice.14</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Otros Conceptos Tributarios</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_14_action">
+            <field name="name">Códigos de Otros Conceptos Tributarios</field>
+            <field name="res_model">einvoice.14</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_15_tree" model="ir.ui.view">
+            <field name="name">einvoice.15.tree</field>
+            <field name="model">einvoice.15</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Elementos Adicionales en la Factura Electrónica</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_15_form" model="ir.ui.view">
+            <field name="name">einvoice.15.form</field>
+            <field name="model">einvoice.15</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Elementos Adicionales en la Factura Electrónica</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_15_action">
+            <field name="name">Códigos de Elementos Adicionales en la Factura Electrónica</field>
+            <field name="res_model">einvoice.15</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_16_tree" model="ir.ui.view">
+            <field name="name">einvoice.16.tree</field>
+            <field name="model">einvoice.16</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Precio de Venta Unitario</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_16_form" model="ir.ui.view">
+            <field name="name">einvoice.16.form</field>
+            <field name="model">einvoice.16</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Precio de Venta Unitario</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_16_action">
+            <field name="name">Códigos de Tipo de Precio de Venta Unitario</field>
+            <field name="res_model">einvoice.16</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_17_tree" model="ir.ui.view">
+            <field name="name">einvoice.17.tree</field>
+            <field name="model">einvoice.17</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Operación</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_17_form" model="ir.ui.view">
+            <field name="name">einvoice.17.form</field>
+            <field name="model">einvoice.17</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Operación</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_17_action">
+            <field name="name">Códigos de Tipo de Operación</field>
+            <field name="res_model">einvoice.17</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_18_tree" model="ir.ui.view">
+            <field name="name">einvoice.18.tree</field>
+            <field name="model">einvoice.18</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Modalidad de Traslado</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_18_form" model="ir.ui.view">
+            <field name="name">einvoice.18.form</field>
+            <field name="model">einvoice.18</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Modalidad de Traslado</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_18_action">
+            <field name="name">Códigos de Modalidad de Traslado</field>
+            <field name="res_model">einvoice.18</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_19_tree" model="ir.ui.view">
+            <field name="name">einvoice.19.tree</field>
+            <field name="model">einvoice.19</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Estado de ítem (resumen diario)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_19_form" model="ir.ui.view">
+            <field name="name">einvoice.19.form</field>
+            <field name="model">einvoice.19</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Estado de ítem (resumen diario)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_19_action">
+            <field name="name">Códigos de Estado de ítem (resumen diario)</field>
+            <field name="res_model">einvoice.19</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_20_tree" model="ir.ui.view">
+            <field name="name">einvoice.20.tree</field>
+            <field name="model">einvoice.20</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Motivo de Traslado</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_20_form" model="ir.ui.view">
+            <field name="name">einvoice.20.form</field>
+            <field name="model">einvoice.20</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Motivo de Traslado</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_20_action">
+            <field name="name">Códigos de Motivo de Traslado</field>
+            <field name="res_model">einvoice.20</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_21_tree" model="ir.ui.view">
+            <field name="name">einvoice.21.tree</field>
+            <field name="model">einvoice.21</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Documentos Relacionados (sólo guía de remisión electrónica)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_21_form" model="ir.ui.view">
+            <field name="name">einvoice.21.form</field>
+            <field name="model">einvoice.21</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Documentos Relacionados (sólo guía de remisión electrónica)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_21_action">
+            <field name="name">Códigos de Documentos Relacionados (sólo guía de remisión electrónica)</field>
+            <field name="res_model">einvoice.21</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_22_tree" model="ir.ui.view">
+            <field name="name">einvoice.22.tree</field>
+            <field name="model">einvoice.22</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Régimen de Percepciones</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="tasa"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_22_form" model="ir.ui.view">
+            <field name="name">einvoice.22.form</field>
+            <field name="model">einvoice.22</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Régimen de Percepciones</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="tasa" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_22_action">
+            <field name="name">Códigos de Régimen de Percepciones</field>
+            <field name="res_model">einvoice.22</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_23_tree" model="ir.ui.view">
+            <field name="name">einvoice.23.tree</field>
+            <field name="model">einvoice.23</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Régimen de Retenciones</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="tasa"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_23_form" model="ir.ui.view">
+            <field name="name">einvoice.23.form</field>
+            <field name="model">einvoice.23</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Régimen de Retenciones</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="tasa" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_23_action">
+            <field name="name">Códigos de Régimen de Retenciones</field>
+            <field name="res_model">einvoice.23</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_24_tree" model="ir.ui.view">
+            <field name="name">einvoice.24.tree</field>
+            <field name="model">einvoice.24</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tarifa de Servicios Públicos</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="servicio"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_24_form" model="ir.ui.view">
+            <field name="name">einvoice.24.form</field>
+            <field name="model">einvoice.24</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tarifa de Servicios Públicos</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="servicio" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_24_action">
+            <field name="name">Códigos de Tarifa de Servicios Públicos</field>
+            <field name="res_model">einvoice.24</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_25_tree" model="ir.ui.view">
+            <field name="name">einvoice.25.tree</field>
+            <field name="model">einvoice.25</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Producto SUNAT</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_25_form" model="ir.ui.view">
+            <field name="name">einvoice.25.form</field>
+            <field name="model">einvoice.25</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Producto SUNAT</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_25_action">
+            <field name="name">Códigos de Producto SUNAT</field>
+            <field name="res_model">einvoice.25</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_26_tree" model="ir.ui.view">
+            <field name="name">einvoice.26.tree</field>
+            <field name="model">einvoice.26</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de préstamo (créditos hipotecarios)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_26_form" model="ir.ui.view">
+            <field name="name">einvoice.26.form</field>
+            <field name="model">einvoice.26</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de préstamo (créditos hipotecarios)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_26_action">
+            <field name="name">Códigos de Tipo de préstamo (créditos hipotecarios)</field>
+            <field name="res_model">einvoice.26</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_27_tree" model="ir.ui.view">
+            <field name="name">einvoice.27.tree</field>
+            <field name="model">einvoice.27</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Indicador de primera vivienda</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_27_form" model="ir.ui.view">
+            <field name="name">einvoice.27.form</field>
+            <field name="model">einvoice.27</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Indicador de primera vivienda</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_27_action">
+            <field name="name">Códigos de Indicador de primera vivienda</field>
+            <field name="res_model">einvoice.27</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_51_tree" model="ir.ui.view">
+            <field name="name">einvoice.51.tree</field>
+            <field name="model">einvoice.51</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Operación</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_51_form" model="ir.ui.view">
+            <field name="name">einvoice.51.form</field>
+            <field name="model">einvoice.51</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de Operación</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_51_action">
+            <field name="name">Códigos de Tipo de Operación</field>
+            <field name="res_model">einvoice.51</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_52_tree" model="ir.ui.view">
+            <field name="name">einvoice.52.tree</field>
+            <field name="model">einvoice.52</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Leyendas</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_52_form" model="ir.ui.view">
+            <field name="name">einvoice.52.form</field>
+            <field name="model">einvoice.52</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Leyendas</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_52_action">
+            <field name="name">Códigos de Leyendas</field>
+            <field name="res_model">einvoice.52</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_53_tree" model="ir.ui.view">
+            <field name="name">einvoice.53.tree</field>
+            <field name="model">einvoice.53</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Cargos, descuentos y otras deducciones</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="item"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_53_form" model="ir.ui.view">
+            <field name="name">einvoice.53.form</field>
+            <field name="model">einvoice.53</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Cargos, descuentos y otras deducciones</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="item" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_53_action">
+            <field name="name">Códigos de Cargos, descuentos y otras deducciones</field>
+            <field name="res_model">einvoice.53</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_54_tree" model="ir.ui.view">
+            <field name="name">einvoice.54.tree</field>
+            <field name="model">einvoice.54</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Bienes y servicios sujetos a detracciones</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_54_form" model="ir.ui.view">
+            <field name="name">einvoice.54.form</field>
+            <field name="model">einvoice.54</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Bienes y servicios sujetos a detracciones</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_54_action">
+            <field name="name">Códigos de Bienes y servicios sujetos a detracciones</field>
+            <field name="res_model">einvoice.54</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_55_tree" model="ir.ui.view">
+            <field name="name">einvoice.55.tree</field>
+            <field name="model">einvoice.55</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Identificación del concepto tributario</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_55_form" model="ir.ui.view">
+            <field name="name">einvoice.55.form</field>
+            <field name="model">einvoice.55</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Identificación del concepto tributario</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_55_action">
+            <field name="name">Códigos de Identificación del concepto tributario</field>
+            <field name="res_model">einvoice.55</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_56_tree" model="ir.ui.view">
+            <field name="name">einvoice.56.tree</field>
+            <field name="model">einvoice.56</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de servicio público</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_56_form" model="ir.ui.view">
+            <field name="name">einvoice.56.form</field>
+            <field name="model">einvoice.56</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de servicio público</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_56_action">
+            <field name="name">Códigos de Tipo de servicio público</field>
+            <field name="res_model">einvoice.56</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_57_tree" model="ir.ui.view">
+            <field name="name">einvoice.57.tree</field>
+            <field name="model">einvoice.57</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de servicio público - telecomunicaciones</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_57_form" model="ir.ui.view">
+            <field name="name">einvoice.57.form</field>
+            <field name="model">einvoice.57</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de servicio público - telecomunicaciones</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_57_action">
+            <field name="name">Códigos de Tipo de servicio público - telecomunicaciones</field>
+            <field name="res_model">einvoice.57</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_58_tree" model="ir.ui.view">
+            <field name="name">einvoice.58.tree</field>
+            <field name="model">einvoice.58</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de medidor (recibo de luz)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_58_form" model="ir.ui.view">
+            <field name="name">einvoice.58.form</field>
+            <field name="model">einvoice.58</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de medidor (recibo de luz)</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_58_action">
+            <field name="name">Códigos de Tipo de medidor (recibo de luz)</field>
+            <field name="res_model">einvoice.58</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_59_tree" model="ir.ui.view">
+            <field name="name">einvoice.59.tree</field>
+            <field name="model">einvoice.59</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Medios de pago</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_59_form" model="ir.ui.view">
+            <field name="name">einvoice.59.form</field>
+            <field name="model">einvoice.59</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Medios de pago</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_59_action">
+            <field name="name">Códigos de Medios de pago</field>
+            <field name="res_model">einvoice.59</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <record id="view_einvoice_60_tree" model="ir.ui.view">
+            <field name="name">einvoice.60.tree</field>
+            <field name="model">einvoice.60</field>
+            <field name="inherit_id" ref="view_einvoice_templ_tree"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/tree" position="attributes">
+                    <attribute name="string">Códigos de Tipo de dirección</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_einvoice_60_form" model="ir.ui.view">
+            <field name="name">einvoice.60.form</field>
+            <field name="model">einvoice.60</field>
+            <field name="inherit_id" ref="view_einvoice_templ_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="/form" position="attributes">
+                    <attribute name="string">Códigos de Tipo de dirección</attribute>
+                </xpath>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="einvoice_60_action">
+            <field name="name">Códigos de Tipo de dirección</field>
+            <field name="res_model">einvoice.60</field>
+            <field name="view_mode">tree</field>
+        </record>
+        
+        <menuitem name="Catálogos de la SUNAT" id="einvoice_configuration_menu" parent="account.menu_finance_configuration" sequence="23"/>
+        <menuitem name="Catálogo 01 - Tipo de Comprobante" id="einvoice_01_menu" parent="einvoice_configuration_menu" action="einvoice_01_action" sequence="1"/>
+        <menuitem name="Catálogo 05 - Tipo de Tributo" id="einvoice_05_menu" parent="einvoice_configuration_menu" action="einvoice_05_action" sequence="5"/>
+        <menuitem name="Catálogo 07 - Tipo de Afectación del IGV" id="einvoice_07_menu" parent="einvoice_configuration_menu" action="einvoice_07_action" sequence="7"/>
+        <menuitem name="Catálogo 08 - Tipo de Sistema de Cálculo del ISC" id="einvoice_08_menu" parent="einvoice_configuration_menu" action="einvoice_08_action" sequence="8"/>
+        <menuitem name="Catálogo 09 - Tipo de Nota de Crédito Electrónica" id="einvoice_09_menu" parent="einvoice_configuration_menu" action="einvoice_09_action" sequence="9"/>
+        <menuitem name="Catálogo 10 - Tipo de Nota de Débito Electrónica" id="einvoice_10_menu" parent="einvoice_configuration_menu" action="einvoice_10_action" sequence="10"/>
+        <menuitem name="Catálogo 11 - Tipo de Valor de Venta" id="einvoice_11_menu" parent="einvoice_configuration_menu" action="einvoice_11_action" sequence="11"/>
+        <menuitem name="Catálogo 12 - Documentos Relacionados Tributarios" id="einvoice_12_menu" parent="einvoice_configuration_menu" action="einvoice_12_action" sequence="12"/>
+        <menuitem name="Catálogo 14 - Otros Conceptos Tributarios" id="einvoice_14_menu" parent="einvoice_configuration_menu" action="einvoice_14_action" sequence="14"/>
+        <menuitem name="Catálogo 15 - Elementos Adicionales en la Factura Electrónica" id="einvoice_15_menu" parent="einvoice_configuration_menu" action="einvoice_15_action" sequence="15"/>
+        <menuitem name="Catálogo 16 - Tipo de Precio de Venta Unitario" id="einvoice_16_menu" parent="einvoice_configuration_menu" action="einvoice_16_action" sequence="16"/>
+        <menuitem name="Catálogo 17 - Tipo de Operación" id="einvoice_17_menu" parent="einvoice_configuration_menu" action="einvoice_17_action" sequence="17"/>
+        <menuitem name="Catálogo 18 - Modalidad de Traslado" id="einvoice_18_menu" parent="einvoice_configuration_menu" action="einvoice_18_action" sequence="18"/>
+        <menuitem name="Catálogo 19 - Estado de ítem (resumen diario)" id="einvoice_19_menu" parent="einvoice_configuration_menu" action="einvoice_19_action" sequence="19"/>
+        <menuitem name="Catálogo 20 - Motivo de Traslado" id="einvoice_20_menu" parent="einvoice_configuration_menu" action="einvoice_20_action" sequence="20"/>
+        <menuitem name="Catálogo 21 - Documentos Relacionados (sólo guía de remisión electrónica)" id="einvoice_21_menu" parent="einvoice_configuration_menu" action="einvoice_21_action" sequence="21"/>
+        <menuitem name="Catálogo 22 - Régimen de Percepciones" id="einvoice_22_menu" parent="einvoice_configuration_menu" action="einvoice_22_action" sequence="22"/>
+        <menuitem name="Catálogo 23 - Régimen de Retenciones" id="einvoice_23_menu" parent="einvoice_configuration_menu" action="einvoice_23_action" sequence="23"/>
+        <menuitem name="Catálogo 24 - Tarifa de Servicios Públicos" id="einvoice_24_menu" parent="einvoice_configuration_menu" action="einvoice_24_action" sequence="24"/>
+        <menuitem name="Catálogo 25 - Producto SUNAT" id="einvoice_25_menu" parent="einvoice_configuration_menu" action="einvoice_25_action" sequence="25"/>
+        <menuitem name="Catálogo 26 - Tipo de préstamo (créditos hipotecarios)" id="einvoice_26_menu" parent="einvoice_configuration_menu" action="einvoice_26_action" sequence="26"/>
+        <menuitem name="Catálogo 27 - Indicador de primera vivienda" id="einvoice_27_menu" parent="einvoice_configuration_menu" action="einvoice_27_action" sequence="27"/>
+        <menuitem name="Catálogo 51 - Tipo de Operación" id="einvoice_51_menu" parent="einvoice_configuration_menu" action="einvoice_51_action" sequence="51"/>
+        <menuitem name="Catálogo 52 - Leyendas" id="einvoice_52_menu" parent="einvoice_configuration_menu" action="einvoice_52_action" sequence="52"/>
+        <menuitem name="Catálogo 53 - Cargos, descuentos y otras deducciones" id="einvoice_53_menu" parent="einvoice_configuration_menu" action="einvoice_53_action" sequence="53"/>
+        <menuitem name="Catálogo 54 - Bienes y servicios sujetos a detracciones" id="einvoice_54_menu" parent="einvoice_configuration_menu" action="einvoice_54_action" sequence="54"/>
+        <menuitem name="Catálogo 55 - Identificación del concepto tributario" id="einvoice_55_menu" parent="einvoice_configuration_menu" action="einvoice_55_action" sequence="55"/>
+        <menuitem name="Catálogo 56 - Tipo de servicio público" id="einvoice_56_menu" parent="einvoice_configuration_menu" action="einvoice_56_action" sequence="56"/>
+        <menuitem name="Catálogo 57 - Tipo de servicio público - telecomunicaciones" id="einvoice_57_menu" parent="einvoice_configuration_menu" action="einvoice_57_action" sequence="57"/>
+        <menuitem name="Catálogo 58 - Tipo de medidor (recibo de luz)" id="einvoice_58_menu" parent="einvoice_configuration_menu" action="einvoice_58_action" sequence="58"/>
+        <menuitem name="Catálogo 59 - Medios de pago" id="einvoice_59_menu" parent="einvoice_configuration_menu" action="einvoice_59_action" sequence="59"/>
+        <menuitem name="Catálogo 60 - Tipo de dirección" id="einvoice_60_menu" parent="einvoice_configuration_menu" action="einvoice_60_action" sequence="60"/>
+    </data>
+</odoo>

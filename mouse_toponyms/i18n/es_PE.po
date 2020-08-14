@@ -1,0 +1,550 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pe
+# 	* l10n_latam_base
+# 	* mouse_toponyms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 04:07+0000\n"
+"PO-Revision-Date: 2020-07-09 04:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mouse_toponyms
+#: model:ir.model.constraint,message:mouse_toponyms.constraint_res_city_unique_district_code
+msgid "A city with this code already exists in this state."
+msgstr "Una ciudad con este código ya existe en esta provincia."
+
+#. module: mouse_toponyms
+#: model:ir.model.constraint,message:mouse_toponyms.constraint_l10n_pe_res_city_district_unique_district_code
+msgid "A district with this code already exists in this city."
+msgstr "Un distrito con este código ya existe en esta ciudad."
+
+#. module: l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__active
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_l10n_latam_identification_type_search
+msgid "Active"
+msgstr "Activo"
+
+#. module: mouse_toponyms
+#: model:ir.model.fields,field_description:mouse_toponyms.field_res_company__type
+msgid "Address Type"
+msgstr "Tipo de dirección"
+
+#. module: mouse_toponyms
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.pe_partner_address_form
+msgid "Address..."
+msgstr "Dirección..."
+
+#. module: l10n_latam_base
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_l10n_latam_identification_type_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: mouse_toponyms
+#: model:ir.ui.menu,name:mouse_toponyms.menu_city_partner
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.view_city_form
+msgid "Cities"
+msgstr "Ciudades"
+
+#. modules: l10n_pe, mouse_toponyms
+#: model:ir.model,name:l10n_pe.model_res_city
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__city_id
+#: model:ir.model.fields,field_description:mouse_toponyms.field_res_company__city_id
+msgid "City"
+msgstr "Ciudad"
+
+#. modules: l10n_pe
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__code
+#: model:ir.model.fields,field_description:l10n_pe.field_res_city__l10n_pe_code
+msgid "Code"
+msgstr "Código"
+
+#. modules: l10n_latam_base
+#: model:ir.model,name:l10n_latam_base.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. modules: l10n_latam_base
+#: model:ir.model,name:l10n_latam_base.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. modules: l10n_pe, l10n_latam_base, mouse_toponyms
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__country_id
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+#: model:ir.model.fields,field_description:mouse_toponyms.field_l10n_pe_res_city_district__country_id
+msgid "Country"
+msgstr "País"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__create_uid
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__create_date
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_det
+msgid "DET"
+msgstr ""
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_DNI
+msgid "DNI"
+msgstr ""
+
+#. module: l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_DIC
+msgid "Diplomatic Identity Card"
+msgstr "Cédula Diplomática de Identidad"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__display_name
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: mouse_toponyms
+#: model_terms:ir.actions.act_window,help:mouse_toponyms.action_res_city_district_tree
+msgid ""
+"Display and manage the list of all districts\n"
+"that can be assigned to your partner records."
+msgstr ""
+"Observe y gestione la lista de todos los distritos\n"
+"que pueden ser asignados a sus contactos."
+
+#. modules: l10n_pe, mouse_toponyms
+#: model:ir.model,name:l10n_pe.model_l10n_pe_res_city_district
+#: model:ir.model.fields,field_description:l10n_pe.field_res_partner__l10n_pe_district
+#: model:ir.model.fields,field_description:l10n_pe.field_res_users__l10n_pe_district
+#: model:ir.model.fields,field_description:mouse_toponyms.field_res_company__l10n_pe_district
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.view_city_district_filter
+msgid "District"
+msgstr "Distrito"
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "District..."
+msgstr "Distrito..."
+
+#. module: mouse_toponyms
+#: model:ir.actions.act_window,name:mouse_toponyms.action_res_city_district_tree
+#: model:ir.ui.menu,name:mouse_toponyms.menu_city_district_partner
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.view_city_district_form
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.view_city_district_tree
+msgid "Districts"
+msgstr "Distritos"
+
+#. module: l10n_pe
+#: model:ir.model.fields,help:l10n_pe.field_res_partner__l10n_pe_district
+#: model:ir.model.fields,help:l10n_pe.field_res_users__l10n_pe_district
+msgid "Districts are part of a province or city."
+msgstr "Los distritos son parte de una provincia o ciudad."
+
+#. module: l10n_pe
+#: model:ir.model.fields,field_description:l10n_pe.field_account_tax__l10n_pe_edi_unece_category
+#: model:ir.model.fields,field_description:l10n_pe.field_account_tax_template__l10n_pe_edi_unece_category
+msgid "EDI UNECE code"
+msgstr "Código UNECE EDI"
+
+#. module: l10n_pe
+#: model:ir.model.fields,field_description:l10n_pe.field_account_tax__l10n_pe_edi_tax_code
+#: model:ir.model.fields,field_description:l10n_pe.field_account_tax_template__l10n_pe_edi_tax_code
+msgid "EDI peruvian code"
+msgstr "Código peruano EDI"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_exo
+msgid "EXO"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__9997
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__9997
+msgid "EXO - Exonerated"
+msgstr "EXO - Exonerado"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_exp
+msgid "EXP"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__9995
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__9995
+msgid "EXP - Exportation"
+msgstr "EXP - Exportación"
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_unece_category__e
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_unece_category__e
+msgid "Exempt from tax"
+msgstr "Exonerado"
+
+#. module: l10n_pe
+#: model:ir.model.fields,help:l10n_pe.field_account_tax_template__l10n_pe_edi_unece_category
+msgid ""
+"Follow the UN/ECE 5305 standard from the United Nations Economic Commission "
+"for Europe for more information  "
+"http://www.unece.org/trade/untdid/d08a/tred/tred5305.htm"
+msgstr ""
+"Siga el estándar UN/ECE 5305 from the Comisión Económica de las Naciones Unidas "
+"para Europa para más información  "
+"http://www.unece.org/trade/untdid/d08a/tred/tred5305.htm"
+
+#. module: l10n_pe
+#: model:ir.model.fields,help:l10n_pe.field_account_tax__l10n_pe_edi_unece_category
+msgid ""
+"Follow the UN/ECE 5305 standard from the United Nations Economic Commission "
+"for Europe for more information "
+"http://www.unece.org/trade/untdid/d08a/tred/tred5305.htm"
+msgstr ""
+"Siga el estándar UN/ECE 5305 from the Comisión Económica de las Naciones Unidas "
+"para Europa para más información "
+"http://www.unece.org/trade/untdid/d08a/tred/tred5305.htm"
+
+#. module: l10n_latam_base
+#: model:l10n_latam.identification.type,name:l10n_latam_base.it_fid
+msgid "Foreign ID"
+msgstr "Carné de Extranjería"
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_unece_category__g
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_unece_category__g
+msgid "Free export item, tax not charged"
+msgstr "Exportación, no se aplican impuestos"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_gra
+msgid "GRA"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__9996
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__9996
+msgid "GRA - Free"
+msgstr "GRA - Gratis"
+
+#. module: l10n_pe
+#: model:ir.model.fields,field_description:l10n_pe.field_account_move_line__l10n_pe_group_id
+msgid "Group"
+msgstr "Grupo"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__id
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_igv
+msgid "IGV"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__1000
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__1000
+msgid "IGV - General Sales Tax"
+msgstr "IGV - Impuesto General a las Ventas"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_ina
+msgid "INA"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__9998
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__9998
+msgid "INA - Unaffected"
+msgstr "INA - Inafecto"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_isc
+msgid "ISC"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__2000
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__2000
+msgid "ISC - Selective Excise Tax"
+msgstr "ISC Impuesto Selectivo al Consumo"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_ivap
+msgid "IVAP"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__1016
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__1016
+msgid "IVAP - Tax on Sale Paddy Rice"
+msgstr "IVAP - Impuesto a la Venta Arroz Pilado"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_res_partner__vat
+#: model:ir.model.fields,field_description:l10n_latam_base.field_res_users__vat
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_partner_latam_form
+#: model:l10n_latam.identification.type,name:l10n_pe.it_IN
+msgid "Identification Number"
+msgstr "Número de Identificación"
+
+#. module: l10n_latam_base
+#: model:ir.model.fields,help:l10n_latam_base.field_res_partner__vat
+#: model:ir.model.fields,help:l10n_latam_base.field_res_users__vat
+msgid "Identification Number for selected type"
+msgstr "Número de identificación para el tipo seleccionado"
+
+#. module: l10n_latam_base
+#: model:ir.actions.act_window,name:l10n_latam_base.action_l10n_latam_identification_type
+#: model:ir.model.fields,field_description:l10n_latam_base.field_res_partner__l10n_latam_identification_type_id
+#: model:ir.model.fields,field_description:l10n_latam_base.field_res_users__l10n_latam_identification_type_id
+#: model:ir.ui.menu,name:l10n_latam_base.menu_l10n_latam_identification_type
+msgid "Identification Type"
+msgstr "Tipo de Identificación"
+
+#. modules: l10n_latam_base
+#: model:ir.model,name:l10n_latam_base.model_l10n_latam_identification_type
+msgid "Identification Types"
+msgstr "Tipos de Identificación"
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_IDCR
+msgid "Identity document of the country of residence"
+msgstr "Documento de identidad del país de residencia"
+
+#. module: mouse_toponyms
+#: model:ir.model.fields,help:mouse_toponyms.field_res_company__type
+msgid ""
+"Invoice & Delivery addresses are used in sales orders. Private addresses are"
+" only visible by authorized users."
+msgstr ""
+"Las direcciones de factura y envío son usadas en las órdenes de venta. Las "
+"direcciones privadas solo son visibles por usuarios autorizados."
+
+#. module: l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__is_vat
+msgid "Is Vat"
+msgstr "Identificación Fiscal"
+
+#. module: l10n_pe
+#: model:ir.model,name:l10n_pe.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_pe
+#: model:ir.model,name:l10n_pe.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_pe
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_latam_identification_type__l10n_pe_vat_code
+msgid "L10N Pe Vat Code"
+msgstr "L10N Pe Catálogo 6"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type____last_update
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__write_uid
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. modules: l10n_pe, l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__write_date
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. modules: l10n_pe, l10n_latam_base, mouse_toponyms
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__name
+#: model:ir.model.fields,field_description:l10n_pe.field_l10n_pe_res_city_district__name
+#: model:ir.model.fields,field_description:mouse_toponyms.field_res_city__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_NDTD
+msgid "Non-Domiciled Tax Document"
+msgstr "Documento Tributario No-Domiciliado"
+
+#. module: l10n_latam_base
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_partner_latam_form
+msgid "Number"
+msgstr "Número"
+
+#. module: l10n_pe
+#: model:account.tax.group,name:l10n_pe.tax_group_other
+msgid "OTROS"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_tax_code__9999
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_tax_code__9999
+msgid "OTROS - Other taxes"
+msgstr "OTROS - Otros tributos"
+
+#. module: l10n_latam_base
+#: model:l10n_latam.identification.type,name:l10n_latam_base.it_pass
+msgid "Passport"
+msgstr "Pasaporte"
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "Province..."
+msgstr "Provincia..."
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_RUC
+msgid "RUC"
+msgstr ""
+
+#. module: mouse_toponyms
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.pe_partner_address_form
+msgid "Reference..."
+msgstr "Referencia..."
+
+#. module: mouse_toponyms
+#: model_terms:ir.ui.view,arch_db:mouse_toponyms.view_city_district_filter
+msgid "Search District"
+msgstr "Buscar Distrito"
+
+#. module: l10n_latam_base
+#: model:ir.model.fields,field_description:l10n_latam_base.field_l10n_latam_identification_type__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_unece_category__o
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_unece_category__o
+msgid "Services outside scope of tax"
+msgstr "Servicios inafectos de tributo"
+
+#. module: l10n_latam_base
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_l10n_latam_identification_type_search
+msgid "Show active identification types"
+msgstr "Mostrar los tipos de identificación activos"
+
+#. module: l10n_latam_base
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_l10n_latam_identification_type_search
+msgid "Show archived identification types"
+msgstr "Mostrar los tipos de identificación archivados"
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_unece_category__s
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_unece_category__s
+msgid "Standard rate"
+msgstr "Tasa estándar"
+
+#. module: mouse_toponyms
+#: model:ir.model.fields,field_description:mouse_toponyms.field_l10n_pe_res_city_district__state_id
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "State..."
+msgstr "Departamento..."
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "Street"
+msgstr "Calle"
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "Street Name..."
+msgstr "Nombre de la Calle..."
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "Street2"
+msgstr "Calle2"
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_TAM
+msgid "TAM"
+msgstr ""
+
+#. module: l10n_pe
+#: model:ir.model,name:l10n_pe.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: l10n_pe
+#: model:l10n_latam.identification.type,name:l10n_pe.it_TIN
+msgid "Tax Identification Number"
+msgstr "Número de Identificación Tributario"
+
+#. module: l10n_pe
+#: model:ir.model,name:l10n_pe.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr "Plantilla de impuestos"
+
+#. module: l10n_latam_base
+#: model:ir.model.fields,help:l10n_latam_base.field_res_partner__l10n_latam_identification_type_id
+#: model:ir.model.fields,help:l10n_latam_base.field_res_users__l10n_latam_identification_type_id
+msgid "The type of identification"
+msgstr "Tipo de identificación"
+
+#. module: mouse_toponyms
+#: model:ir.model.constraint,message:mouse_toponyms.constraint_res_city_unique_district_name
+msgid "This city already exists in this state."
+msgstr "Esta ciudad ya existe en esta provincia."
+
+#. module: l10n_pe
+#: model:ir.model.fields,help:l10n_pe.field_res_city__l10n_pe_code
+msgid "This code will help with the identification of each city in Peru."
+msgstr "Este código ayudará con la identificación de cada ciudad en Perú."
+
+#. modules: l10n_pe, mouse_toponyms
+#: model:ir.model.fields,help:l10n_pe.field_l10n_pe_res_city_district__code
+msgid "This code will help with the identification of each district in Peru."
+msgstr "Este código ayudará con la identificación de cada distrito en Perú."
+
+#. module: mouse_toponyms
+#: model:ir.model.constraint,message:mouse_toponyms.constraint_l10n_pe_res_city_district_unique_district_name
+msgid "This district already exists in this city."
+msgstr "Este distrito ya existe en esta ciudad."
+
+#. module: l10n_latam_base
+#: model_terms:ir.ui.view,arch_db:l10n_latam_base.view_partner_latam_form
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_latam_base
+#: model:l10n_latam.identification.type,name:l10n_latam_base.it_vat
+msgid "VAT"
+msgstr "RUC"
+
+#. module: l10n_pe
+#: model_terms:ir.ui.view,arch_db:l10n_pe.pe_partner_address_form
+msgid "ZIP"
+msgstr "Ubigeo"
+
+#. module: l10n_pe
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax__l10n_pe_edi_unece_category__z
+#: model:ir.model.fields.selection,name:l10n_pe.selection__account_tax_template__l10n_pe_edi_unece_category__z
+msgid "Zero rated goods"
+msgstr "Bienes gratuitos"
