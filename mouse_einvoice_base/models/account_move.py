@@ -75,7 +75,7 @@ class AccountMove(models.Model) :
     
     def generate_qr_base_64(self, data=False) :
         self.ensure_one()
-        data = data or self._generate_qr_data()
+        data = data or record._generate_qr_data()
         img = crearqr(ver=None, box=4, bor=2, data=data)
         buffered = BytesIO()
         img.save(buffered)

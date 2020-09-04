@@ -1,0 +1,442 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mouse_einvoice_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-30 22:26+0000\n"
+"PO-Revision-Date: 2020-07-30 22:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_move_form_debit_credit
+msgid "<span class=\"o_stat_text\">Credit Notes</span>"
+msgstr "<span class=\"o_stat_text\">Notas de Crédito</span>"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Revocación de movimiento en cuenta"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_debit_note
+msgid "Add Debit Note wizard"
+msgstr "Asistente de creación de Nota de Débito"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"All invoices sent to SUNAT must be posted.\n"
+"Please select only posted invoices."
+msgstr ""
+"Todos los comprobantes enviados a la SUNAT deben estar validados.\n"
+"Por favor seleccione solo comprobantes validados."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_code
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_code
+msgid ""
+"Analog to odoo account.move.type but with more options allowing to identify "
+"the kind of document we are working with. (not only related to account.move,"
+" could be for documents of other models like stock.picking)"
+msgstr ""
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__sunat_answer
+msgid "Answer received from SUNAT"
+msgstr "Respuesta recibida de la SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__beta_service
+msgid "Beta Server"
+msgstr "Servidor Beta"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_res_company
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_credit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_credit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__l10n_latam_document_type_credit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_ir_sequence__l10n_latam_document_type_credit_id
+msgid "Credit Note Type"
+msgstr "Tipo de Nota de Crédito"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__credit_note_ids
+msgid "Credit Notes"
+msgstr "Notas de Crédito"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "Credit note of %s"
+msgstr "Nota de crédito de %s"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__credit_origin_id
+msgid "Credited Invoice"
+msgstr "Comprobante Rectificado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_debit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_debit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__l10n_latam_document_type_debit_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_ir_sequence__l10n_latam_document_type_debit_id
+msgid "Debit Note Type"
+msgstr "Tipo de Nota de Débito"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "Debit note of %s"
+msgstr "Nota de débito de %s"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__sunat_digest_value
+msgid "DigestValue of the SUNAT answer"
+msgstr "DigestValue de la respuesta SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__signed_xml_digest_value
+msgid "DigestValue of the XML digital signature"
+msgstr "DigestValue de la firma digital XML"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__digital_certificate
+msgid "Digital Certificate"
+msgstr "Certificado Digital"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__digital_certificate_filename
+msgid "Digital Certificate Filename"
+msgstr "Nombre de Archivo del Certificado Digital"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__digital_password
+msgid "Digital Certificate Password"
+msgstr "Contraseña del Certificado Digital"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__l10n_latam_document_type_id
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_ir_sequence__l10n_latam_document_type_id
+msgid "Document Type"
+msgstr "Tipo de Comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_tax__l10n_pe_edi_tax_code
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_tax_template__l10n_pe_edi_tax_code
+msgid "EDI peruvian code"
+msgstr "Código peruano EDI"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.report_invoice_document
+msgid "Electrónica"
+msgstr ""
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "GENERIC"
+msgstr "GENÉRICO"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax__l10n_pe_edi_tax_code__7152
+msgid "ICBPER - Plastic Bag Consumption Tax"
+msgstr "ICBPER - Impuesto al Consumo de las Bolsas de Plástico"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax_template__l10n_pe_edi_tax_code__7152
+msgid "ICBPER - Plastic Bag Tax"
+msgstr ""
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax__l10n_pe_edi_tax_code__3000
+#: model:ir.model.fields.selection,name:mouse_einvoice_base.selection__account_tax_template__l10n_pe_edi_tax_code__3000
+msgid "IR - Income Tax"
+msgstr "IR - Impuesto a la Renta"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_bank_statement_import_journal_creation__l10n_latam_document_type_code
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_journal__l10n_latam_document_type_code
+msgid "Internal Type"
+msgstr "Tipo Interno"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__einvoice_journal_id
+msgid "Invoice"
+msgstr "Comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__credit_note_count
+msgid "Number of Credit Notes"
+msgstr "Número de Notas de Crédito"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "Please set a date for the invoice."
+msgstr "Por favor fije una fecha para el comprobante."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__qr_binary
+msgid "QR Code"
+msgstr "Código QR"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__qr
+msgid "QR Code Content"
+msgstr "Contenido del Código QR"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__qr_binary_filename
+msgid "QR Code Filename"
+msgstr "Nombre de Archivo del Código QR"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__sunat_code
+msgid "Response code received from SUNAT"
+msgstr "Código de respuesta recibido de SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__pass_sol
+msgid "SOL Password"
+msgstr "Contraseña SOL"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_res_company__user_sol
+msgid "SOL User"
+msgstr "Usuario SOL"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.report_invoice_document
+msgid "SON"
+msgstr ""
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sunat_answer
+msgid "SUNAT Answer"
+msgstr "Respuesta SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sunat_digest_value
+msgid "SUNAT DigestValue"
+msgstr "DigestValue SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sunat_code
+msgid "SUNAT Response Code"
+msgstr "Código de Respuesta SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.actions.server,name:mouse_einvoice_base.ir_cron_send_sunat_ir_actions_server
+#: model:ir.cron,cron_name:mouse_einvoice_base.ir_cron_send_sunat
+#: model:ir.cron,name:mouse_einvoice_base.ir_cron_send_sunat
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_move_form
+msgid "Send to SUNAT"
+msgstr "Enviar a SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sent_sunat
+msgid "Sent to SUNAT"
+msgstr "Enviado a SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__sent_sunat_beta
+msgid "Sent to SUNAT Beta"
+msgstr "Enviado al Beta de SUNAT"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_ir_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml
+msgid "Signed Raw XML"
+msgstr "XML Firmado Puro"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml_binary
+msgid "Signed XML"
+msgstr "XML Firmado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml_digest_value
+msgid "Signed XML DigestValue"
+msgstr "DigestValue del XML Firmado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__signed_xml_binary_filename
+msgid "Signed XML Filename"
+msgstr "Nombre de Archivo del XML Firmado"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__signed_xml_binary
+msgid "Signed XML representation of the invoice"
+msgstr "Representación XML firmada del comprobante"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_tax
+msgid "Tax"
+msgstr "Impuesto"
+
+#. module: mouse_einvoice_base
+#: model:ir.model,name:mouse_einvoice_base.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr "Plantilla de impuestos"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The VAT identification number of the client is not valid."
+msgstr "El número de RUC del cliente no es válido."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The VAT identification number of the user's company is not valid."
+msgstr "El número de RUC de la compañía del usuario no es válido."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__credit_note_ids
+msgid "The credit notes created for this invoice"
+msgstr "Las notas de crédito creadas para este comprobante"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The digital certificate file is erroneous.\n"
+msgstr "El archivo del certificado digital presenta errores.\n"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "The user's company must have a VAT identification."
+msgstr "La compañía del usuario debe estar identificada por un RUC."
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__unsigned_xml
+msgid "Unsigned Raw XML"
+msgstr "XML sin Firmar Puro"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__unsigned_xml_binary
+msgid "Unsigned XML"
+msgstr "XML sin Firmar"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,field_description:mouse_einvoice_base.field_account_move__unsigned_xml_binary_filename
+msgid "Unsigned XML Filename"
+msgstr "Nombre de Archivo del XML sin Firmar"
+
+#. module: mouse_einvoice_base
+#: model:ir.model.fields,help:mouse_einvoice_base.field_account_move__unsigned_xml_binary
+msgid "Unsigned XML representation of the invoice"
+msgstr "Representación XML sin firmar del comprobante"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You can only send a posted invoice to SUNAT."
+msgstr "Solo puede enviar un comprobante validado a SUNAT."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post an invoice of type %s for a client that has a VAT "
+"identification number"
+msgstr "No puede validar un comprobante de tipo %s para un cliente con RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post an invoice of type %s for a client without a VAT "
+"identification number"
+msgstr "No puede validar un comprobante de tipo %s para un cliente sin RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post the invoices because the client of an invoice of type %s "
+"doesn't have a VAT identification number"
+msgstr ""
+"No puede validar los comprobantes porque el cliente de un comprobante de "
+"tipo %s no posee RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid ""
+"You can't post the invoices because the client of an invoice of type %s has "
+"a VAT identification number"
+msgstr ""
+"No puede validar los comprobantes porque el cliente de un comprobante de "
+"tipo %s posee RUC"
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You must set the VAT identification number of the client."
+msgstr "Debe definir el RUC del cliente."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You must set the VAT identification number of the user's company."
+msgstr "Debe definir el RUC de la compañía del usuario."
+
+#. module: mouse_einvoice_base
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#: code:addons/mouse_einvoice_base/models/account_move.py:0
+#, python-format
+msgid "You must set the identification type of the user's company"
+msgstr "Debe definir el tipo de documento de la compañía del usuario."
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_move_form
+msgid "e-Invoicing"
+msgstr "Facturación Electrónica"
+
+#. module: mouse_einvoice_base
+#: model_terms:ir.ui.view,arch_db:mouse_einvoice_base.view_company_form
+msgid "e-Invoicing Data"
+msgstr "Datos de Facturación Electrónica"
